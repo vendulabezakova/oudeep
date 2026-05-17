@@ -119,6 +119,63 @@ nav {
 }
 .nav-cta:hover { background: #b8311f; }
 
+/* ── DROPDOWN ── */
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown-toggle {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--black);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-dropdown-toggle::after {
+  content: '▾';
+  font-size: 10px;
+  transition: transform 0.2s;
+}
+.nav-dropdown-toggle:hover { opacity: 1; }
+.nav-dropdown-toggle.open::after { transform: rotate(180deg); }
+.nav-dropdown-toggle.open { opacity: 1; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 0;
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  border-radius: 4px;
+  min-width: 240px;
+  z-index: 200;
+  overflow: hidden;
+}
+.dropdown-menu.open { display: block; }
+.dropdown-menu a {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--black);
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--gray-mid);
+  opacity: 0.8;
+  transition: background 0.15s, opacity 0.15s;
+}
+.dropdown-menu a:last-child { border-bottom: none; }
+.dropdown-menu a:hover { background: var(--gray-light); opacity: 1; }
+
 /* ── HAMBURGER ── */
 .nav-hamburger {
   display: none;
@@ -448,6 +505,155 @@ footer {
   letter-spacing: 0.08em;
 }
 
+/* ── POSITIONING ── */
+.positioning-text p {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+  max-width: 720px;
+}
+.positioning-text p:nth-child(2) {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  color: var(--black);
+  font-weight: 500;
+}
+
+/* ── ČO FIRMA ZÍSKA (programy na mieru) ── */
+.ziska-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+}
+.ziska-item {
+  padding: 32px 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.ziska-num {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--red);
+  margin-bottom: 16px;
+  display: block;
+}
+.ziska-item p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* ── CENA ── */
+.cena-block {
+  max-width: 720px;
+}
+.cena-text h2 { margin-bottom: 20px; }
+.cena-text p { color: var(--gray-text); }
+
+/* ── CENA ── */
+.cena-block {
+  max-width: 720px;
+}
+.cena-text h2 { margin-bottom: 20px; }
+.cena-text p { color: var(--gray-text); }
+.cena-block h2 { margin-bottom: 20px; }
+.cena-block p { color: var(--gray-text); }
+
+/* ── PROBLÉM ── */
+.problem-text p {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+.problem-stat {
+  font-family: var(--font-heading);
+  font-size: 18px !important;
+  color: var(--black) !important;
+  border-left: 3px solid var(--red);
+  padding-left: 20px;
+  margin: 32px 0 8px !important;
+}
+.problem-stat strong { color: var(--red); }
+.problem-source {
+  font-family: var(--font-heading);
+  font-size: 11px !important;
+  letter-spacing: 0.08em;
+  color: var(--gray-text) !important;
+  margin-bottom: 24px !important;
+  padding-left: 23px;
+}
+
+/* ── PRE KOHO (LWS) ── */
+.lws-prekoho-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 40px;
+  border: 1px solid var(--gray-mid);
+}
+.lws-prekoho-item {
+  padding: 32px 40px;
+  border: 1px solid var(--gray-mid);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.lws-prekoho-num {
+  font-family: var(--font-heading);
+  color: var(--red);
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.lws-prekoho-item p { color: var(--gray-text); }
+
+/* ── FÁZY ── */
+.fazy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.faza {
+  padding: 40px 32px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.faza-num {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--red);
+  margin-bottom: 20px;
+  display: block;
+}
+.faza h3 { font-size: 16px; margin-bottom: 16px; color: var(--white); }
+.faza p { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+/* ── DVA STĹPCE (výstupy) ── */
+.lws-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+.lws-two-col h2 { margin-bottom: 28px; }
+.lws-list {
+  list-style: none;
+  padding: 0;
+}
+.lws-list li {
+  color: var(--gray-text);
+  padding: 12px 0;
+  padding-left: 20px;
+  border-bottom: 1px solid var(--gray-mid);
+  position: relative;
+  font-size: 15px;
+}
+.lws-list li:last-child { border-bottom: none; }
+.lws-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+}
+
 /* ── TABLET (max 900px) ── */
 @media (max-width: 900px) {
   .section { padding: 72px 0; }
@@ -466,6 +672,12 @@ footer {
   .principy-grid { grid-template-columns: 1fr 1fr; }
 
   .referencie-grid { grid-template-columns: 1fr 1fr; }
+
+  .ziska-grid { grid-template-columns: 1fr 1fr; }
+
+  .lws-prekoho-grid { grid-template-columns: 1fr; }
+  .fazy-grid { grid-template-columns: 1fr; }
+  .lws-two-col { grid-template-columns: 1fr; gap: 48px; }
 
   .o-mne-inner { grid-template-columns: 1fr; gap: 40px; }
   .o-mne-foto { aspect-ratio: 16/9; }
@@ -503,6 +715,12 @@ footer {
 
   .referencie-grid { grid-template-columns: 1fr; }
   .referencia { padding: 32px 24px; }
+
+  .ziska-grid { grid-template-columns: 1fr; }
+  .ziska-item { padding: 24px; }
+
+  .lws-prekoho-item { padding: 24px; }
+  .faza { padding: 32px 24px; }
 
   .cta-zaver { padding: 72px 0; }
   .cta-contact { display: flex; flex-direction: column; gap: 8px; align-items: center; }

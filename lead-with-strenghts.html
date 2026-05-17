@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead with Strengths — Oudeep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Ou<span>Deep</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#spolupráca">Spolupráca</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" onclick="toggleDropdown(this)">Programy</button>
+        <div class="dropdown-menu">
+          <a href="lead-with-strengths.html">Lead with Strengths</a>
+          <a href="the-full-return.html">The Full Return</a>
+          <a href="programy-na-mieru.html">Rozvojové programy na mieru</a>
+          <a href="referencie.html">Referencie</a>
+        </div>
+      </li>
+      <li><a href="index.html#referencie">Referencie</a></li>
+      <li><a href="index.html#o-mne">O mne</a></li>
+    </ul>
+    <a class="nav-cta" href="#">Dohodnime si call</a>
+    <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#spolupráca" onclick="closeMenu()">Spolupráca</a>
+    <a href="lead-with-strengths.html" onclick="closeMenu()">Lead with Strengths</a>
+    <a href="the-full-return.html" onclick="closeMenu()">The Full Return</a>
+    <a href="programy-na-mieru.html" onclick="closeMenu()">Rozvojové programy na mieru</a>
+    <a href="referencie.html" onclick="closeMenu()">Referencie</a>
+    <a href="index.html#o-mne" onclick="closeMenu()">O mne</a>
+    <a href="#" onclick="closeMenu()">Dohodnime si call →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="label">Rozvojový program pre manažérov</span>
+      <h1>Stal si sa lídrom, pretože si bol najlepší. Nikto ťa však nenaučil viesť ľudí.</h1>
+      <p>Lead with Strengths je rozvojový program pre manažérov a team leaderov, ktorí vedú tímy — a prvýkrát sa učia robiť to vedome, individuálne a z priestoru svojich silných stránok.</p>
+      <a class="btn btn--red" href="#">Mám záujem o program</a>
+    </div>
+    <div class="hero-image">[ fotografia ]</div>
+  </div>
+</section>
+
+<!-- PROBLÉM -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="problem-inner">
+      <span class="label">Problém</span>
+      <div class="problem-grid">
+        <div class="problem-text">
+          <p>Väčšina lídrov sa do svojej roly dostala rovnako. Boli skvelí v tom, čo robili. Dostali tím. A zrazu sa od nich očakáva niečo úplne iné — viesť ľudí, motivovať, riešiť konflikty, dávať spätnú väzbu, delegovať. Bez príručky. Bez prípravy.</p>
+          <p>Výsledok? Vedú po svojom — intuitívne, bez systému, bez toho aby vedeli čo ich tím skutočne potrebuje.</p>
+          <p class="problem-stat">Až <strong>70 %</strong> rozdielu vo výkone a angažovanosti tímu závisí výlučne od manažéra.</p>
+          <p class="problem-source">Zdroj: Gallup, State of the American Manager, 2015</p>
+          <p>Nie je to ich chyba. Nikto ich to nenaučil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRE KOHO -->
+<section class="section">
+  <div class="container">
+    <span class="label">Pre koho</span>
+    <h2>Program je pre manažérov a team leaderov, ktorí:</h2>
+    <div class="lws-prekoho-grid">
+      <div class="lws-prekoho-item">
+        <span class="lws-prekoho-num">—</span>
+        <p>vedú menší tím alebo oddelenie</p>
+      </div>
+      <div class="lws-prekoho-item">
+        <span class="lws-prekoho-num">—</span>
+        <p>dostali sa do leadership roly prirodzene — boli dobrí v tom, čo robili</p>
+      </div>
+      <div class="lws-prekoho-item">
+        <span class="lws-prekoho-num">—</span>
+        <p>cítia, že sa od nich veľa očakáva, ale nikto ich na vedenie ľudí reálne nepripravil</p>
+      </div>
+      <div class="lws-prekoho-item">
+        <span class="lws-prekoho-num">—</span>
+        <p>chcú lepšie rozumieť sebe, svojim ľuďom a tomu, čo od nich tím potrebuje</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FÁZY PROGRAMU -->
+<section class="section section--dark">
+  <div class="container">
+    <span class="label">Ako program prebieha</span>
+    <h2 style="color:var(--white); margin-bottom: 16px;">Tri fázy. Každá s konkrétnym výstupom.</h2>
+    <p style="color:rgba(255,255,255,0.5); margin-bottom: 56px; font-size:15px;">Program pozostáva z troch nadväzujúcich fáz. Každá má jasný výstup, s ktorým líder odchádza do praxe.</p>
+    <div class="fazy-grid">
+      <div class="faza">
+        <span class="faza-num">Fáza 01</span>
+        <h3>Know Yourself as a Leader</h3>
+        <p>Líder spozná svoje Top 10 talentov v kontexte vedenia ľudí. Identifikuje svoj autentický leadership štýl, riziká a slepé miesta. Absolvuje 360° spätnú väzbu a vytvorí konkrétny Leadership Action Plan.</p>
+      </div>
+      <div class="faza">
+        <span class="faza-num">Fáza 02</span>
+        <h3>Know Your Individuals</h3>
+        <p>Líder sa naučí čítať ľudí v tíme — ich talenty, motivácie, potreby. Cez individuálne rozhovory a talent profily si vytvorí vlastný Leadership Manual pre každého člena tímu.</p>
+      </div>
+      <div class="faza">
+        <span class="faza-num">Fáza 03</span>
+        <h3>Know Your Team as a System</h3>
+        <p>Líder sa pozrie na tím ako celok — kde sú silné stránky, kde sú riziká, kde on sám funguje ako limit. Výsledkom sú vedomé leadership rozhodnutia a záväzok, ktorý tím pocíti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ČO SI LÍDER ODNESIE -->
+<section class="section">
+  <div class="container">
+    <div class="lws-two-col">
+      <div>
+        <span class="label">Čo firma získa</span>
+        <h2>Výsledky, ktoré vidno.</h2>
+        <ul class="lws-list">
+          <li>Leaderov, ktorí prestanú byť bottleneckom a začnú skutočne viesť</li>
+          <li>Tímy, kde každý vie, čo sa od neho očakáva</li>
+          <li>Menej mikromanažmentu, viac samostatnosti</li>
+          <li>Leadership kultúru, ktorá zostáva — aj keď program skončí</li>
+        </ul>
+      </div>
+      <div>
+        <span class="label">Čo si líder odnesie</span>
+        <h2>Konkrétne výstupy.</h2>
+        <ul class="lws-list">
+          <li>Jasnejší obraz o sebe — silné stránky, riziká, slepé miesta</li>
+          <li>Hlbšie pochopenie každého človeka v tíme</li>
+          <li>Vlastný Leadership Manual</li>
+          <li>Konkrétny akčný plán do praxe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CENA -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="cena-block">
+      <span class="label">Investícia</span>
+      <h2>Cena na dopyt.</h2>
+      <p>Program navrhujem na mieru podľa veľkosti tímu a rozsahu spolupráce. Cenu nastavujeme spoločne po úvodnom rozhovore.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-zaver">
+      <span class="label">Začnime</span>
+      <h2>Zaujíma vás program pre vašich manažérov?</h2>
+      <p>Napíšte mi — za 40 minút zistíme, či nám dáva spolupráca zmysel.</p>
+      <a class="btn btn--red" href="#">Dohodnime si call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Oudeep · Nikoleta Vitovská Tirmazi
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

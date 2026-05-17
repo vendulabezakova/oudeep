@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rozvojové programy na mieru — Oudeep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Ou<span>Deep</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#spolupráca">Spolupráca</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" onclick="toggleDropdown(this)">Programy</button>
+        <div class="dropdown-menu">
+          <a href="lead-with-strengths.html">Lead with Strengths</a>
+          <a href="the-full-return.html">The Full Return</a>
+          <a href="programy-na-mieru.html">Rozvojové programy na mieru</a>
+          <a href="referencie.html">Referencie</a>
+        </div>
+      </li>
+      <li><a href="index.html#referencie">Referencie</a></li>
+      <li><a href="index.html#o-mne">O mne</a></li>
+    </ul>
+    <a class="nav-cta" href="#">Dohodnime si call</a>
+    <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#spolupráca" onclick="closeMenu()">Spolupráca</a>
+    <a href="lead-with-strengths.html" onclick="closeMenu()">Lead with Strengths</a>
+    <a href="the-full-return.html" onclick="closeMenu()">The Full Return</a>
+    <a href="programy-na-mieru.html" onclick="closeMenu()">Rozvojové programy na mieru</a>
+    <a href="referencie.html" onclick="closeMenu()">Referencie</a>
+    <a href="index.html#o-mne" onclick="closeMenu()">O mne</a>
+    <a href="#" onclick="closeMenu()">Dohodnime si call →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="label">Dlhodobé L&D programy</span>
+      <h1>Rozvoj ľudí, ktorý firma pocíti na výsledkoch — nie len na feedbacku z workshopu.</h1>
+      <p>Dlhodobé rozvojové programy pre firmy, ktoré chcú pracovať s potenciálom svojich ľudí systémovo — s merateľným dopadom na výkon, spoluprácu aj retenciu.</p>
+      <a class="btn btn--red" href="#">Chcem sa porozprávať</a>
+    </div>
+    <div class="hero-image">[ fotografia ]</div>
+  </div>
+</section>
+
+<!-- POSITIONING -->
+<section class="section">
+  <div class="container">
+    <div class="positioning-inner">
+      <div class="positioning-text">
+        <span class="label">Ako to robím inak</span>
+        <p>Väčšina firiem investuje do rozvoja a po troch mesiacoch nevie povedať, čo sa zmenilo. Nie preto, že program bol zlý. Ale preto, že nikto nestavil most medzi tým, čo ľudia zažili na workshope — a tým, ako firma funguje v pondelok ráno.</p>
+        <p>Toto je presne to, čo robím inak.</p>
+        <p>Každý program navrhujem od základov — podľa toho, kde firma je, čo ľudia potrebujú a čo brzdí výkon. Môže zahŕňať individuálne Gallup koučingové sedenia, tímové workshopy s TeamGrid analýzou, manažérsky rozvojový program, 1:1 koučing pre lídrov aj pravidelné interim check-iny.</p>
+        <p>Výsledky sa vyhodnocujú — CEO dostáva report s dátami, nie len pocitom, že to bolo fajn. A som tam celý čas. Jeden človek, jeden štandard — od prvej session po záverečné vyhodnotenie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ČO FIRMA ZÍSKA -->
+<section class="section section--dark">
+  <div class="container">
+    <span class="label">Čo firma získa</span>
+    <h2 style="color:var(--white); margin-bottom: 56px;">Merateľný posun, ktorý zostane.</h2>
+    <div class="ziska-grid">
+      <div class="ziska-item">
+        <span class="ziska-num">01</span>
+        <p>Ľudia, ktorí vedia kde sú silní — a pracujú z toho každý deň</p>
+      </div>
+      <div class="ziska-item">
+        <span class="ziska-num">02</span>
+        <p>Manažéri, ktorí vedú vedome, nie len reaktívne</p>
+      </div>
+      <div class="ziska-item">
+        <span class="ziska-num">03</span>
+        <p>Tímy, ktoré spolupracujú, pretože si rozumejú</p>
+      </div>
+      <div class="ziska-item">
+        <span class="ziska-num">04</span>
+        <p>Merateľný posun, ktorý vieme ukázať vedeniu</p>
+      </div>
+      <div class="ziska-item">
+        <span class="ziska-num">05</span>
+        <p>Kultúra rozvoja, ktorá v organizácii zostane — aj keď spolupráca skončí</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CENA -->
+<section class="section">
+  <div class="container">
+    <div class="cena-block">
+      <div class="cena-text">
+        <span class="label">Investícia</span>
+        <h2>Cena závisí od rozsahu a dĺžky spolupráce.</h2>
+        <p>Každý program navrhujem individuálne — podľa toho, kde firma je, čo potrebuje a ako dlho chce spolupracovať. Cenu nastavujeme spoločne po úvodnom rozhovore, keď viem, čo dáva zmysel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="cta-zaver">
+      <span class="label">Začnime</span>
+      <h2>Zaujíma vás, ako by program mohol vyzerať pre vašu firmu?</h2>
+      <p>Každá spolupráca začína rozhovorom — za 30 minút vám poviem, čo dáva zmysel a čo nie.</p>
+      <a class="btn btn--red" href="#">Dohodnime si call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Oudeep · Nikoleta Vitovská Tirmazi
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
