@@ -12,7 +12,7 @@
 <body>
 
 <!-- NAV -->
-<nav>
+<nav style="position:sticky;top:0;z-index:100;">
   <div class="nav-inner">
     <a class="logo" href="#">Ou<span>Deep</span></a>
     <ul class="nav-links">
@@ -22,6 +22,16 @@
       <li><a href="#">O mne</a></li>
     </ul>
     <a class="nav-cta" href="#">Dohodnime si call</a>
+    <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#" onclick="closeMenu()">Spolupráca</a>
+    <a href="#" onclick="closeMenu()">Programy</a>
+    <a href="#" onclick="closeMenu()">Referencie</a>
+    <a href="#" onclick="closeMenu()">O mne</a>
+    <a href="#" onclick="closeMenu()">Dohodnime si call →</a>
   </div>
 </nav>
 
