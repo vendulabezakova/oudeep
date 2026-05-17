@@ -2,7 +2,7 @@
 
 :root {
   --red: #D63C2A;
-  --black: #111111;
+  --black: #2C2825;
   --white: #ffffff;
   --gray-light: #F5F4F2;
   --gray-mid: #E8E6E2;
@@ -344,6 +344,8 @@ nav {
   min-height: 280px;
   transition: border-color 0.2s;
 }
+a.program-karta { text-decoration: none; color: inherit; }
+
 .program-karta:hover { border-color: var(--red); }
 .program-karta h3 { font-size: 22px; margin-bottom: 16px; }
 .program-karta p { color: var(--gray-text); margin-bottom: 32px; flex: 1; }
