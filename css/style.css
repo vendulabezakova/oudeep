@@ -654,6 +654,59 @@ footer {
   color: var(--red);
 }
 
+/* ── THE FULL RETURN ── */
+.tfr-why-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.tfr-why-inner h2 { margin-bottom: 0; }
+.tfr-why-text p {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+}
+.tfr-quote {
+  font-family: var(--font-heading);
+  font-size: 15px !important;
+  color: var(--black) !important;
+  border-left: 3px solid var(--red);
+  padding-left: 20px;
+  margin-top: 32px !important;
+}
+
+.moduly-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.modul {
+  padding: 36px 28px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.modul--wide {
+  grid-column: span 3;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+.modul-num {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--red);
+  margin-bottom: 16px;
+  display: block;
+}
+.modul h3 { font-size: 15px; margin-bottom: 12px; color: var(--white); }
+.modul p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.moduly-note {
+  margin-top: 32px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
 /* ── TABLET (max 900px) ── */
 @media (max-width: 900px) {
   .section { padding: 72px 0; }
@@ -674,6 +727,10 @@ footer {
   .referencie-grid { grid-template-columns: 1fr 1fr; }
 
   .ziska-grid { grid-template-columns: 1fr 1fr; }
+
+  .tfr-why-inner { grid-template-columns: 1fr; gap: 32px; }
+  .moduly-grid { grid-template-columns: 1fr 1fr; }
+  .modul--wide { grid-column: span 2; }
 
   .lws-prekoho-grid { grid-template-columns: 1fr; }
   .fazy-grid { grid-template-columns: 1fr; }
@@ -718,6 +775,10 @@ footer {
 
   .ziska-grid { grid-template-columns: 1fr; }
   .ziska-item { padding: 24px; }
+
+  .moduly-grid { grid-template-columns: 1fr; }
+  .modul--wide { grid-column: span 1; }
+  .modul { padding: 28px 20px; }
 
   .lws-prekoho-item { padding: 24px; }
   .faza { padding: 32px 24px; }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Full Return — Oudeep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Ou<span>Deep</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#spolupráca">Spolupráca</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" onclick="toggleDropdown(this)">Programy</button>
+        <div class="dropdown-menu">
+          <a href="lead-with-strengths.html">Lead with Strengths</a>
+          <a href="the-full-return.html">The Full Return</a>
+          <a href="programy-na-mieru.html">Rozvojové programy na mieru</a>
+          <a href="referencie.html">Referencie</a>
+        </div>
+      </li>
+      <li><a href="index.html#referencie">Referencie</a></li>
+      <li><a href="index.html#o-mne">O mne</a></li>
+    </ul>
+    <a class="nav-cta" href="#">Dohodnime si call</a>
+    <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#spolupráca" onclick="closeMenu()">Spolupráca</a>
+    <a href="lead-with-strengths.html" onclick="closeMenu()">Lead with Strengths</a>
+    <a href="the-full-return.html" onclick="closeMenu()">The Full Return</a>
+    <a href="programy-na-mieru.html" onclick="closeMenu()">Rozvojové programy na mieru</a>
+    <a href="referencie.html" onclick="closeMenu()">Referencie</a>
+    <a href="index.html#o-mne" onclick="closeMenu()">O mne</a>
+    <a href="#" onclick="closeMenu()">Dohodnime si call →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="label">7-mesačný rozvojový program · 1 800 € / osoba</span>
+      <h1>Vaša zamestnankyňa sa vrátila z materskej. Ale je naozaj späť?</h1>
+      <p>The Full Return je 7-mesačný program, ktorý pomáha ženám vrátiť sa do práce nielen fyzicky — ale celé. Sebavedomé, výkonné, s jasnou identitou a miestom v tíme.</p>
+      <a class="btn btn--red" href="#">Mám záujem o program</a>
+    </div>
+    <div class="hero-image">[ fotografia ]</div>
+  </div>
+</section>
+
+<!-- PROBLÉM -->
+<section class="section section--gray">
+  <div class="container">
+    <span class="label">Problém</span>
+    <div class="problem-text">
+      <p>Väčšina firiem rieši návrat z materskej administratívne. Zmluva, laptop, prístup do systémov. Hotovo.</p>
+      <p>Žena, ktorá sa vrátila, však rieši niečo úplne iné. Pochybuje o sebe. Cíti sa odtrhnutá od tímu. Bojí sa, že nestíha, že ju predbehli. Mlčí namiesto toho, aby komunikovala potreby.</p>
+      <p class="problem-stat"><strong>57 %</strong> žien opustí firmu do dvoch rokov od návratu z materskej.</p>
+      <p class="problem-source">Zdroj: Careers After Babies, That Works For Me, 2023</p>
+      <p>Nie preto, že nechcú pracovať. Ale preto, že nedostali podporu, ktorú potrebovali.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREČO TENTO PROGRAM -->
+<section class="section">
+  <div class="container">
+    <div class="tfr-why-inner">
+      <div>
+        <span class="label">Prečo práve tento program</span>
+        <h2>Nie je to HR checklist. Ani motivačný seminár.</h2>
+      </div>
+      <div class="tfr-why-text">
+        <p>The Full Return je jediný program svojho druhu, ktorý kombinuje tri veci naraz: Gallup CliftonStrengths prácu so silnými stránkami, hlbokú prácu s identitou pracujúcej mamy a skupinovú dynamiku žien, ktoré prechádzajú tým istým.</p>
+        <p>Vedie ho niekto, kto si týmto všetkým prešiel osobne. Som Nikoleta — L&D konzultantka, Gallup certifikovaná koučka a mama, ktorej sa po materskej zmenilo všetko. Vrátane profesijnej identity. Rozhodla som sa toto obdobie využiť — a vytvoriť program, ktorý by som vtedy sama potrebovala.</p>
+        <p class="tfr-quote">Keď ti život dá citróny, urob limonádu. Toto je moja limonáda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULY -->
+<section class="section section--dark">
+  <div class="container">
+    <span class="label">Ako program prebieha</span>
+    <h2 style="color:var(--white); margin-bottom: 16px;">7 mesiacov. 6 žien. Reálna zmena.</h2>
+    <p style="color:rgba(255,255,255,0.5); margin-bottom: 56px; font-size:15px;">Každý modul má jasný cieľ, s ktorým prichádzaš, a konkrétny výstup, s ktorým odchádzaš.</p>
+    <div class="moduly-grid">
+      <div class="modul">
+        <span class="modul-num">01</span>
+        <h3>Onboarding & Ciele</h3>
+        <p>Kde som teraz a čo potrebujem. Vstupný dotazník pre ženu aj manažéra — očakávania oboch strán zarovnané od prvého dňa.</p>
+      </div>
+      <div class="modul">
+        <span class="modul-num">02</span>
+        <h3>Identita pracujúcej mamy</h3>
+        <p>Kto som teraz — v práci, doma, sama pre seba. Osobný kontrakt a hranice medzi rolami.</p>
+      </div>
+      <div class="modul">
+        <span class="modul-num">03</span>
+        <h3>Silné stránky & Výkon</h3>
+        <p>Gallup CliftonStrengths — každá žena absolvuje individuálny talent debrief. Nie teória, ale ako fungujú jej talenty v novom kontexte po materskej.</p>
+      </div>
+      <div class="modul">
+        <span class="modul-num">04</span>
+        <h3>Emócie</h3>
+        <p>Vina, strach, porovnávanie, preťaženie. Pomenovanie, pochopenie, nástroje. Nie terapia — praktická práca s tým, čo ženy skutočne cítia.</p>
+      </div>
+      <div class="modul">
+        <span class="modul-num">05</span>
+        <h3>Energia, hranice & Komunikácia</h3>
+        <p>Ako nastaviť hranice v práci aj doma. Konkrétne skripty na rozhovory s manažérom, tímom aj partnerom.</p>
+      </div>
+      <div class="modul">
+        <span class="modul-num">06</span>
+        <h3>Profesná vízia</h3>
+        <p>Kam idem ďalej. Hodnoty, smer, ciele na 1–3 roky — realistické, nie utopické.</p>
+      </div>
+      <div class="modul modul--wide">
+        <span class="modul-num">07</span>
+        <h3>Záverečný deň</h3>
+        <p>Celodenné osobné stretnutie v Brne alebo Bratislave. Rituál ukončenia, zdieľanie, networking. A plán na to, čo príde potom.</p>
+      </div>
+    </div>
+    <p class="moduly-note">Výstupy z programu dostáva nielen žena — relevantné informácie o posune sú zdieľané aj s HR alebo priamym manažérom.</p>
+  </div>
+</section>
+
+<!-- ČO FIRMA ZÍSKA -->
+<section class="section">
+  <div class="container">
+    <div class="lws-two-col">
+      <div>
+        <span class="label">Čo firma získa</span>
+        <h2>Investícia, ktorá sa vráti.</h2>
+        <ul class="lws-list">
+          <li>Žena, ktorá vie kto je — a dokáže to využiť v práci aj doma</li>
+          <li>Rýchlejší návrat do plného výkonu</li>
+          <li>Lojalita — žena, ktorá cíti podporu firmy, zostáva dlhšie</li>
+          <li>Employer branding — firma, ktorá takto investuje do žien, je firma kde ľudia chcú byť</li>
+        </ul>
+      </div>
+      <div>
+        <span class="label">Investícia</span>
+        <h2>1 800 € / osoba</h2>
+        <ul class="lws-list">
+          <li>Program prebieha v skupine 6 žien</li>
+          <li>Gallup CliftonStrengths All 34 pre každú účastníčku zahrnutý v cene</li>
+          <li>Cena nezahŕňa cestovné náklady pri prezenčných stretnutiach mimo Brna / Bratislavy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="cta-zaver">
+      <span class="label">Začnime</span>
+      <h2>Chcete vedieť viac o programe pre vaše zamestnankyne?</h2>
+      <p>Napíšte mi — za 40 minút zistíme, či program dáva zmysel pre vašu firmu.</p>
+      <a class="btn btn--red" href="#">Dohodnime si call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Oudeep · Nikoleta Vitovská Tirmazi
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
