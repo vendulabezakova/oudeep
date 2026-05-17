@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referencie — Oudeep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Ou<span>Deep</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#spolupráca">Spolupráca</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" onclick="toggleDropdown(this)">Programy</button>
+        <div class="dropdown-menu">
+          <a href="lead-with-strengths.html">Lead with Strengths</a>
+          <a href="the-full-return.html">The Full Return</a>
+          <a href="programy-na-mieru.html">Rozvojové programy na mieru</a>
+          <a href="referencie.html">Referencie</a>
+        </div>
+      </li>
+      <li><a href="index.html#referencie">Referencie</a></li>
+      <li><a href="index.html#o-mne">O mne</a></li>
+    </ul>
+    <a class="nav-cta" href="#">Dohodnime si call</a>
+    <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#spolupráca" onclick="closeMenu()">Spolupráca</a>
+    <a href="lead-with-strengths.html" onclick="closeMenu()">Lead with Strengths</a>
+    <a href="the-full-return.html" onclick="closeMenu()">The Full Return</a>
+    <a href="programy-na-mieru.html" onclick="closeMenu()">Rozvojové programy na mieru</a>
+    <a href="referencie.html" onclick="closeMenu()">Referencie</a>
+    <a href="index.html#o-mne" onclick="closeMenu()">O mne</a>
+    <a href="#" onclick="closeMenu()">Dohodnime si call →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner" style="grid-template-columns: 1fr;">
+    <div class="hero-text">
+      <span class="label">Referencie</span>
+      <h1>Čo hovoria klienti.</h1>
+      <p>Plné verzie referencií — pripravujeme. Táto stránka bude doplnená po schválení obsahu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCIE — 3 vybrané z homepage -->
+<section class="section section--gray">
+  <div class="container">
+    <span class="label">Vybrané referencie</span>
+    <div class="referencie-grid">
+      <div class="referencia">
+        <p class="referencia-text">She doesn't just 'run the tests.' She opens up areas and conversations that go far beyond what we expected.</p>
+        <div class="referencia-autor">
+          <strong>Peter Mlynarčík</strong>
+          <span>CEO — B6 Furniture</span>
+        </div>
+      </div>
+      <div class="referencia">
+        <p class="referencia-text">She doesn't just explain Gallup strengths — she helps you really understand what they mean in real life. I've seen how her sessions create not only insight, but also real connection between people.</p>
+        <div class="referencia-autor">
+          <strong>Alexander Dancsó</strong>
+          <span>CCO — B6 Furniture</span>
+        </div>
+      </div>
+      <div class="referencia">
+        <p class="referencia-text">Nika pomohla, aby sme strategicky pracovali s talentami, ktoré máme vo firme a vyskladali plne funkčné tímy, ktoré sa navzájom dopĺňajú.</p>
+        <div class="referencia-autor">
+          <strong>Monika Oravcová</strong>
+          <span>HR Partner — Aston ITM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-zaver">
+      <span class="label">Začnime</span>
+      <h2>Porozprávajme sa.</h2>
+      <p>Za 40 minút zistíme, či spolupráca dáva zmysel — pre vás aj pre mňa.</p>
+      <a class="btn btn--red" href="#">Naplánovať call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Oudeep · Nikoleta Vitovská Tirmazi
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
