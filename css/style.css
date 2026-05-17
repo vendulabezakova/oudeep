@@ -1,5 +1,5 @@
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
   :root {
     --red: #D63C2A;
     --black: #111111;
@@ -12,9 +12,9 @@
     --max: 1100px;
     --pad: clamp(24px, 5vw, 80px);
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: var(--font-body);
     color: var(--black);
@@ -23,13 +23,13 @@
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   /* ── UTILITIES ── */
   .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
   .section { padding: 96px 0; }
   .section--gray { background: var(--gray-light); }
   .section--dark { background: var(--black); color: var(--white); }
-
+ 
   .label {
     font-family: var(--font-heading);
     font-size: 11px;
@@ -39,12 +39,12 @@
     margin-bottom: 16px;
     display: block;
   }
-
+ 
   h1, h2, h3 { font-family: var(--font-heading); font-weight: 500; line-height: 1.2; }
   h1 { font-size: clamp(28px, 4vw, 48px); }
   h2 { font-size: clamp(22px, 3vw, 36px); }
   h3 { font-size: clamp(16px, 2vw, 20px); }
-
+ 
   .btn {
     display: inline-block;
     font-family: var(--font-heading);
@@ -63,7 +63,7 @@
   .btn--outline:hover { background: var(--black); color: var(--white); }
   .btn--outline-white { background: transparent; color: var(--white); border: 1.5px solid var(--white); }
   .btn--outline-white:hover { background: var(--white); color: var(--black); }
-
+ 
   /* ── NAV ── */
   nav {
     position: sticky;
@@ -118,7 +118,7 @@
     transition: background 0.2s;
   }
   .nav-cta:hover { background: #b8311f; }
-
+ 
   /* ── HERO ── */
   .hero {
     padding: 100px 0 80px;
@@ -154,7 +154,7 @@
     color: var(--gray-text);
     letter-spacing: 0.08em;
   }
-
+ 
   /* ── PROOF BAR ── */
   .proof-bar {
     border-bottom: 1px solid var(--gray-mid);
@@ -186,7 +186,7 @@
     font-size: 14px;
     color: var(--gray-text);
   }
-
+ 
   /* ── PRE KOHO ── */
   .pre-koho-grid {
     display: grid;
@@ -203,7 +203,7 @@
     margin-bottom: 16px;
   }
   .pre-koho-block p { color: var(--gray-text); }
-
+ 
   /* ── PRINCIPY ── */
   .principy-header {
     margin-bottom: 56px;
@@ -238,7 +238,7 @@
     color: var(--white);
   }
   .princip p { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.6; }
-
+ 
   /* ── PROGRAMY ── */
   .programy-grid {
     display: grid;
@@ -270,7 +270,7 @@
     gap: 8px;
   }
   .program-link::after { content: '→'; }
-
+ 
   /* ── REFERENCIE ── */
   .referencie-grid {
     display: grid;
@@ -322,7 +322,7 @@
     border-bottom: 1px solid var(--red);
     padding-bottom: 2px;
   }
-
+ 
   /* ── O MNE ── */
   .o-mne-inner {
     display: grid;
@@ -392,7 +392,7 @@
     left: 0;
     color: var(--red);
   }
-
+ 
   /* ── CTA ZÁVER ── */
   .cta-zaver {
     text-align: center;
@@ -408,7 +408,7 @@
     color: var(--gray-text);
   }
   .cta-contact a { color: var(--black); text-decoration: none; border-bottom: 1px solid var(--gray-mid); }
-
+ 
   /* ── FOOTER ── */
   footer {
     background: var(--black);
@@ -418,4 +418,138 @@
     font-family: var(--font-heading);
     font-size: 11px;
     letter-spacing: 0.08em;
+  }
+ 
+  /* ── HAMBURGER ── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--black);
+    transition: all 0.3s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+ 
+  .nav-mobile {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-mid);
+    padding: 24px var(--pad);
+    flex-direction: column;
+    gap: 0;
+    z-index: 99;
+  }
+  .nav-mobile.open { display: flex; }
+  .nav-mobile a {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--black);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--gray-mid);
+    opacity: 0.8;
+  }
+  .nav-mobile a:last-child {
+    border-bottom: none;
+    color: var(--red);
+    opacity: 1;
+    margin-top: 8px;
+  }
+ 
+  /* ── TABLET (max 900px) ── */
+  @media (max-width: 900px) {
+    .section { padding: 72px 0; }
+ 
+    /* Nav */
+    .nav-links, .nav-cta { display: none; }
+    .nav-hamburger { display: flex; }
+    nav { position: sticky; }
+ 
+    /* Hero */
+    .hero { padding: 64px 0 56px; }
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .hero-image { aspect-ratio: 16/9; }
+ 
+    /* Proof bar */
+    .proof-bar-inner { gap: 0; }
+    .proof-item { padding: 0 32px 0 0; margin-right: 32px; }
+ 
+    /* Pre koho */
+    .pre-koho-grid { grid-template-columns: 1fr; }
+ 
+    /* Principy */
+    .principy-grid { grid-template-columns: 1fr 1fr; }
+ 
+    /* Referencie */
+    .referencie-grid { grid-template-columns: 1fr 1fr; }
+ 
+    /* O mne */
+    .o-mne-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .o-mne-foto { aspect-ratio: 16/9; }
+  }
+ 
+  /* ── MOBIL (max 600px) ── */
+  @media (max-width: 600px) {
+    .section { padding: 56px 0; }
+ 
+    /* Hero */
+    .hero { padding: 48px 0 40px; }
+    .hero-text p { font-size: 16px; }
+    .btn { width: 100%; text-align: center; padding: 16px 24px; }
+ 
+    /* Proof bar */
+    .proof-bar { padding: 32px 0; }
+    .proof-bar-inner { flex-direction: column; gap: 0; }
+    .proof-item {
+      padding: 20px 0;
+      margin-right: 0;
+      border-right: none;
+      border-bottom: 1px solid var(--gray-mid);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .proof-item:last-child { border-bottom: none; }
+    .proof-number { font-size: 28px; min-width: 60px; margin-bottom: 0; }
+ 
+    /* Pre koho */
+    .pre-koho-block { padding: 32px 24px; }
+ 
+    /* Principy */
+    .principy-grid { grid-template-columns: 1fr; }
+    .princip { padding: 32px 24px; }
+ 
+    /* Programy */
+    .programy-grid { grid-template-columns: 1fr; gap: 16px; }
+    .program-karta { padding: 32px 24px; min-height: auto; }
+ 
+    /* Referencie */
+    .referencie-grid { grid-template-columns: 1fr; }
+    .referencia { padding: 32px 24px; }
+ 
+    /* CTA záver */
+    .cta-zaver { padding: 72px 0; }
+    .cta-contact { display: flex; flex-direction: column; gap: 8px; align-items: center; }
   }
