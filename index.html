@@ -7,12 +7,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
 <!-- NAV -->
-<nav style="position:sticky;top:0;z-index:100;">
+<nav>
   <div class="nav-inner">
     <a class="logo" href="#">Ou<span>Deep</span></a>
     <ul class="nav-links">
@@ -185,7 +184,6 @@
         <p>L&D konzultantka, Gallup Certified Strengths Coach a zakladateľka značky Oudeep. Navrhujem a vediem rozvojové programy pre firmy, ktoré chcú pracovať s potenciálom svojich ľudí systematicky a s merateľným dopadom.</p>
         <p>Za posledné roky som odškolila 800+ hodín individuálnych konzultácií, viedla 40+ tímových workshopov a postavila celý rozvojový program pre manažérsky tím od analýzy potrieb až po CEO reporting.</p>
         <p>Nie som tu od toho, aby som odškolila témy. Som tu od toho, aby firma po spolupráci so mnou vedela rozvoj riadiť aj bezo mňa.</p>
-
         <div class="accordion">
           <button class="accordion-toggle" onclick="toggleAccordion(this)">Viac o mne</button>
           <div class="accordion-content">
@@ -230,12 +228,6 @@
   </div>
 </footer>
 
-<script>
-  function toggleAccordion(btn) {
-    btn.classList.toggle('open');
-    btn.nextElementSibling.classList.toggle('open');
-  }
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
