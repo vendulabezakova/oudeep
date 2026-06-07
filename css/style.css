@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --red: #D63C2A;
+  --red: #e92411;
   --black: #111111;
   --white: #ffffff;
   --gray-light: #F5F4F2;
@@ -41,7 +41,7 @@ body {
 }
 
 h1, h2, h3 { font-family: var(--font-heading); font-weight: 500; line-height: 1.2; }
-h1 { font-size: clamp(28px, 4vw, 48px); }
+h1 { font-size: clamp(22px, 3vw, 36px); }
 h2 { font-size: clamp(22px, 3vw, 36px); }
 h3 { font-size: clamp(16px, 2vw, 20px); }
 
@@ -343,9 +343,11 @@ nav {
   justify-content: space-between;
   min-height: 280px;
   transition: border-color 0.2s;
+  text-decoration: none;
+  color: var(--black);
 }
 .program-karta:hover { border-color: var(--red); }
-.program-karta h3 { font-size: 22px; margin-bottom: 16px; }
+.program-karta h3 { font-size: 22px; margin-bottom: 16px; color: var(--red); }
 .program-karta p { color: var(--gray-text); margin-bottom: 32px; flex: 1; }
 .program-link {
   font-family: var(--font-heading);
@@ -481,9 +483,6 @@ nav {
 .cta-zaver p {
   color: var(--gray-text);
   margin-bottom: 40px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .cta-contact {
   margin-top: 32px;
@@ -509,7 +508,6 @@ footer {
 .positioning-text p {
   color: var(--gray-text);
   margin-bottom: 20px;
-  max-width: 720px;
 }
 .positioning-text p:nth-child(2) {
   font-family: var(--font-heading);
@@ -562,7 +560,6 @@ footer {
 .problem-text p {
   color: var(--gray-text);
   margin-bottom: 20px;
-  max-width: 680px;
 }
 .problem-stat {
   font-family: var(--font-heading);
