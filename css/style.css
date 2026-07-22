@@ -25,8 +25,8 @@ body {
 }
 
 /* ── UTILITIES ── */
-.container { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
-.section { padding: 96px 0; }
+.container { max-width: var(--max); margin: 0 auto; }
+.section { padding: 96px var(--pad); }
 .section--gray { background: var(--gray-light); }
 .section--dark { background: var(--black); color: var(--white); }
 
@@ -230,16 +230,15 @@ nav {
 
 /* ── HERO ── */
 .hero {
-  padding: 100px 0 80px;
+  padding: 100px var(--pad) 80px;
   border-bottom: 1px solid var(--gray-mid);
 }
 .hero-inner {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--pad);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 56px;
   align-items: center;
 }
 .hero-text h1 { margin-bottom: 24px; }
@@ -247,7 +246,7 @@ nav {
   font-size: 18px;
   color: var(--gray-text);
   margin-bottom: 36px;
-  max-width: 480px;
+  max-width: 560px;
 }
 .hero-image {
   background: var(--gray-mid);
@@ -260,17 +259,24 @@ nav {
   font-size: 12px;
   color: var(--gray-text);
   letter-spacing: 0.08em;
+  overflow: hidden;
 }
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-image--portrait { aspect-ratio: 3/4; }
 
 /* ── PROOF BAR ── */
 .proof-bar {
   border-bottom: 1px solid var(--gray-mid);
-  padding: 40px 0;
+  padding: 40px var(--pad);
 }
 .proof-bar-inner {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--pad);
   display: flex;
 }
 .proof-item {
@@ -497,7 +503,7 @@ nav {
 footer {
   background: var(--black);
   color: rgba(255,255,255,0.4);
-  padding: 32px 0;
+  padding: 32px var(--pad);
   text-align: center;
   font-family: var(--font-heading);
   font-size: 11px;
@@ -656,6 +662,11 @@ footer {
   color: var(--red);
 }
 
+/* ── SPOLUPRÁCA (jednoduchá) ── */
+.spolupraca-simple { max-width: 640px; margin-top: 32px; }
+.spolupraca-simple li { color: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(255,255,255,0.15); }
+.spolupraca-simple li::before { color: var(--red); }
+
 /* ── THE FULL RETURN ── */
 .tfr-why-inner {
   display: grid;
@@ -711,14 +722,15 @@ footer {
 
 /* ── TABLET (max 900px) ── */
 @media (max-width: 900px) {
-  .section { padding: 72px 0; }
+  .section { padding: 72px var(--pad); }
 
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
 
-  .hero { padding: 64px 0 56px; }
+  .hero { padding: 64px var(--pad) 56px; }
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-image { aspect-ratio: 16/9; }
+  .hero-image--portrait { aspect-ratio: 3/4; }
 
   .proof-item { padding: 0 32px 0 0; margin-right: 32px; }
 
@@ -744,13 +756,13 @@ footer {
 
 /* ── MOBIL (max 600px) ── */
 @media (max-width: 600px) {
-  .section { padding: 56px 0; }
+  .section { padding: 56px var(--pad); }
 
-  .hero { padding: 48px 0 40px; }
+  .hero { padding: 48px var(--pad) 40px; }
   .hero-text p { font-size: 16px; }
   .btn { width: 100%; text-align: center; padding: 16px 24px; }
 
-  .proof-bar { padding: 32px 0; }
+  .proof-bar { padding: 32px var(--pad); }
   .proof-bar-inner { flex-direction: column; }
   .proof-item {
     padding: 20px 0;

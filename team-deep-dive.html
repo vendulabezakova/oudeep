@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Deep Dive — Oudeep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Ou<span>Deep</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#spolupráca">Spolupráca</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" onclick="toggleDropdown(this)">Programy</button>
+        <div class="dropdown-menu">
+          <a href="team-deep-dive.html">Team Deep Dive</a>
+          <a href="lead-with-strengths.html">Lead with Strengths</a>
+          <a href="the-full-return.html">The Full Return</a>
+          <a href="programy-na-mieru.html">Rozvojové programy na mieru</a>
+        </div>
+      </li>
+      <li><a href="referencie.html">Referencie</a></li>
+      <li><a href="o-mne.html">O mne</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="nav-cta" href="#">Dohodnime si call</a>
+    <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#spolupráca" onclick="closeMenu()">Spolupráca</a>
+    <a href="team-deep-dive.html" onclick="closeMenu()">Team Deep Dive</a>
+    <a href="lead-with-strengths.html" onclick="closeMenu()">Lead with Strengths</a>
+    <a href="the-full-return.html" onclick="closeMenu()">The Full Return</a>
+    <a href="programy-na-mieru.html" onclick="closeMenu()">Rozvojové programy na mieru</a>
+    <a href="referencie.html" onclick="closeMenu()">Referencie</a>
+    <a href="o-mne.html" onclick="closeMenu()">O mne</a>
+    <a href="index.html#kontakt" onclick="closeMenu()">Kontakt</a>
+    <a href="#" onclick="closeMenu()">Dohodnime si call →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="label">Pre manažérov a lídrov, ktorí vedú ľudí — nie len procesy.</span>
+      <h1>Z akého priestoru vediete svoj tím? A viete, čo stojí za jeho výsledkami?</h1>
+      <p>Team Deep Dive vám dá odpoveď na obe otázky — priamo z toho, čo sa naozaj deje vo vašom tíme.</p>
+      <a class="btn btn--red" href="#">Mám záujem o program</a>
+    </div>
+    <div class="hero-image"><img src="media/team-deep-dive-hero.png" alt="Team Deep Dive"></div>
+  </div>
+</section>
+
+<!-- PREČO NA TOM ZÁLEŽÍ -->
+<section class="section">
+  <div class="container">
+    <div class="positioning-inner">
+      <div class="positioning-text">
+        <span class="label">Prečo na tom záleží</span>
+        <p>Team Deep Dive je o tom, aby si každý človek v tíme uvedomil: kde je jeho hodnota? Kde je jeho kúsok zodpovednosti? Kde je priestor, ktorý môže využiť, zlepšovať? Ktorý môže prevziať a „bojovať" zaň?</p>
+        <p>A kde naopak je priestor, kde potrebuje pomoc? Nie preto, že je slabý, ale preto, že to jednoducho nie je v súlade s ním. Že to nie je jeho silná stránka.</p>
+        <p>Nepoďme sa ďalej kúpať a podporovať priemernosť, ktorá bola veľakrát oslavovaná v našom školskom systéme.</p>
+        <p>Poďme práve pochopiť to, v čom sme unikátni. Každý z nás, náš tím, naša firma. A ako to celé môžeme pretaviť do nášho bežného fungovania, operatívy a rozhodnutí, ktoré robíme dennodenne.</p>
+        <p>A čím viac vecí okolo nás rieši AI, tým viac záleží na tom, čo v ľuďoch zostáva jedinečné.</p>
+        <p style="font-family:var(--font-heading); font-size:15px; color:var(--black);">Presne o tomto ide v Team Deep Dive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AKO NA TO -->
+<section class="section section--gray">
+  <div class="container">
+    <span class="label">Ako na to</span>
+    <h2>Poznaj seba, poznaj svoj tím.</h2>
+    <p style="color:var(--gray-text); margin-top:16px; max-width:640px;">Manažéri, lídri, tímy a jednotlivci riešia dennodenne rôznu paletu oblastí, záležitostí, problémov a výziev. Postup je jednoduchý, ale nie ľahký.</p>
+
+    <h3 style="margin-top:56px; margin-bottom:24px;">Najprv: Poznám seba.</h3>
+    <ul class="lws-list">
+      <li>Z akého priestoru rozhodujem — z istoty, z tlaku, z potreby mať všetko pod kontrolou?</li>
+      <li>Čo mi ide prirodzene — a čo ma stojí energiu, aj keď to navonok zvládam?</li>
+      <li>Vidím svoj tím taký, aký naozaj je — alebo cez vlastný filter, ktorý mi niekedy zavadzia?</li>
+      <li>Reagujem na svojich ľudí z toho, kto som — alebo z toho, kým si myslím, že by som mal/a byť?</li>
+    </ul>
+
+    <h3 style="margin-top:56px; margin-bottom:8px;">Potom: Spoznám svoj tím.</h3>
+
+    <h4 style="font-family:var(--font-heading); font-size:14px; margin-top:32px; margin-bottom:16px;">Ako pracuje</h4>
+    <ul class="lws-list">
+      <li>Kto je ten, kto začína projekty — a kto ich dokončuje?</li>
+      <li>Komu treba explicitne povedať, čo má robiť, a kto si sám prevezme iniciatívu?</li>
+      <li>Kto dokáže veci plánovať dopredu, a kto naopak funguje najlepšie v ad hoc rozhodnutiach?</li>
+      <li>Kto potrebuje jasnosť, štruktúru, disciplínu — a komu vyhovuje prirodzený chaos?</li>
+      <li>Kto v tíme potrebuje jasné hranice a štruktúru — a koho naopak mikromanažment dusí a berie mu chuť priniesť vlastný nápad?</li>
+    </ul>
+
+    <h4 style="font-family:var(--font-heading); font-size:14px; margin-top:40px; margin-bottom:16px;">Ako spolupracuje</h4>
+    <ul class="lws-list">
+      <li>Kto v tíme preberie zodpovednosť za vlastnú chybu — a kto ju potichu prehodí na kolegu?</li>
+      <li>Rozumejú si všetci v tíme na tom, čo je vlastne spoločný cieľ — alebo si pod tým každý predstavuje niečo iné?</li>
+      <li>Odovzdávajú si u vás ľudia prácu tak, že sa nič nestratí cestou — alebo veci miznú medzi jednotlivými krokmi a nikto poriadne nevie prečo?</li>
+      <li>Ako sa tieto osobnosti môžu navzájom dopĺňať?</li>
+      <li>Aký to má dopad na to, ako sa ľudia v tíme cítia — a na výsledky celej firmy?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TO SA DEJE NA WORKSHOPE -->
+<section class="section">
+  <div class="container">
+    <span class="label">To sa deje na workshope</span>
+    <div class="problem-text" style="margin-top:24px;">
+      <p>Toto všetko sa na Team Deep Dive pomenuje nahlas. A zrazu tam sedí tím, kde má každý okolo seba zrkadlá — a týmito zrkadlami sú jeho spolupracovníci.</p>
+      <p>Zrkadlo neodsudzuje. Len ukazuje späť to, čo tam je. Každý opíše, ako sám seba vníma a prečo koná tak, ako koná — a tým mu to zrkadlí: čo si všimli, čo ich prekvapilo, kde vidia inak. A to isté zrkadlo sa potom otočí aj na tím ako celok — nielen jednotlivec vidí seba jasnejšie, ale aj tím vidí sám seba.</p>
+      <p>Operatíva vám na toto nikdy nedá priestor. Vzniká z toho jasnosť, otvorená komunikácia a priestor na zdieľanie názorov, ktorý predtým nebol. Riešia sa nedorozumenia a frustrácie skôr, než sa stihnú nahromadiť. Zmapujú sa motivácie ľudí — pretože každý z nás ich má niekde inde.</p>
+    </div>
+    <p class="problem-stat" style="font-size:16px !important;">A koľko vaša firma platí za to, že toto nemá explicitne pomenované? Nie na faktúre — ale v termínoch, ktoré nestíhajú, v kvalite, ktorá kolíše, a v ľuďoch, ktorí odchádzajú z dôvodov, čo sa dali riešiť mesiace predtým.</p>
+  </div>
+</section>
+
+<!-- ČO PRESNE DOSTANETE -->
+<section class="section section--dark">
+  <div class="container">
+    <span class="label">Čo presne dostanete</span>
+    <div class="lws-two-col" style="margin-top:40px;">
+      <div>
+        <h3 style="color:var(--white); margin-bottom:24px;">Team Deep Dive</h3>
+        <ul class="lws-list">
+          <li style="color:rgba(255,255,255,0.7); border-bottom-color:rgba(255,255,255,0.15);">Individuálne Gallup CliftonStrengths sedenie (Top 10 talentov) pre každého člena tímu</li>
+          <li style="color:rgba(255,255,255,0.7); border-bottom-color:rgba(255,255,255,0.15);">Tímový workshop, kde vznikne spoločná mapa tímu (Gallup Team Grid) — uvidíte, kto v tíme prirodzene preberá vedenie, komu vyhovuje štruktúra a komu voľnosť. Túto mapu si odnášate a viete s ňou pracovať aj o rok neskôr — pri delení úloh, riešení konfliktov, alebo keď do tímu prijímate niekoho nového.</li>
+          <li style="color:rgba(255,255,255,0.7); border-bottom-color:rgba(255,255,255,0.15);">Spoločne zmapované silné a slabé stránky tímu</li>
+          <li style="color:rgba(255,255,255,0.7);">Konkrétny akčný plán — čo z toho vyťažiť a čo minimalizovať, s jasne priradenou zodpovednosťou</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:var(--white); margin-bottom:8px;">Team Deep Dive+</h3>
+        <p style="color:rgba(255,255,255,0.6); font-size:15px; margin-bottom:24px;">Všetko z Team Deep Dive, plus:</p>
+        <ul class="lws-list">
+          <li style="color:rgba(255,255,255,0.7); border-bottom-color:rgba(255,255,255,0.15);">Individuálne Gallup sedenie na slabé stránky (Lesser Themes) pre každého člena tímu</li>
+          <li style="color:rgba(255,255,255,0.7); border-bottom-color:rgba(255,255,255,0.15);">Na workshope si každý zdieľa vlastné insighty zo svojho sedenia — kde vidí, že môže svoje slabšie stránky kompenzovať vlastnými silnými stránkami, a kde potrebuje niekoho iného</li>
+          <li style="color:rgba(255,255,255,0.7);">Tímová kompenzácia — mapujeme, kto v tíme môže pomôcť komu, a kde treba podporu zabezpečiť systémovo, nie len spoliehaním sa na jednotlivca</li>
+        </ul>
+      </div>
+    </div>
+    <p style="color:rgba(255,255,255,0.4); font-style:italic; font-size:14px; margin-top:40px;">Presný harmonogram workshopu pripravím podľa veľkosti tímu a zvoleného variantu.</p>
+  </div>
+</section>
+
+<!-- DÔKAZ -->
+<section class="section section--gray">
+  <div class="container">
+    <span class="label">Dôkaz (anonymizované)</span>
+    <div class="problem-text" style="margin-top:24px;">
+      <p>Obchodný tím zistil, že polovica ľudí si pod pojmom „náš produkt" predstavovala niečo úplne iné. Dôsledok: každý ho klientom komunikoval inak — jeden zdôrazňoval jednu vlastnosť, druhý inú. Tí istí klienti tak od toho istého tímu dostávali rozdielne verzie toho, čo vlastne kupujú. Až na workshope si to prvýkrát spoločne pomenovali a zjednotili.</p>
+      <p>Manažér iného tímu bol presvedčený, že „nemá tím" — ľudia mu prišli nesamostatní a nespoľahliví. Ukázalo sa, že chýbalo jasné odovzdávanie know-how. Po workshope si ho začali odovzdávať v reťazci, jeden druhému — a manažér prestal byť jediným bodom, na ktorom všetko stálo.</p>
+      <p>Pri inom klientovi sa na workshope ukázalo, že tím má veľa ľudí, čo skvele naštartujú projekt — ale málo tých, čo ho aj dotiahnu do konca. Keď si to pomenovali, začali si prácu deliť inak: kto naštartuje, odovzdá tomu, kto to dokončí.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTÍCIA -->
+<section class="section">
+  <div class="container">
+    <div class="cena-block">
+      <span class="label">Investícia</span>
+      <h2>Cena na mieru</h2>
+      <p>Cena je vždy postavená na mieru — podľa veľkosti firmy aj podľa zvoleného balíka, Team Deep Dive alebo Team Deep Dive+. Zahŕňa individuálne sedenia s každým členom tímu, samotný workshop aj Gallup testy.</p>
+      <p style="font-style:italic; font-size:14px; margin-top:16px;">Orientačne: individuálne sedenie od €180 (90 min) / 4 500 Kč · tímový workshop od €1 800 / 45 000 Kč</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="cta-zaver">
+      <span class="label">Začnime</span>
+      <h2>Poďme si zavolať na 40 minút.</h2>
+      <p>Zistíme, či to dáva zmysel — pre vás aj pre mňa.</p>
+      <a class="btn btn--red" href="#">Mám záujem o program</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Oudeep · Nikoleta Vitovská Tirmazi
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
