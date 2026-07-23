@@ -90,14 +90,14 @@ nav {
   height: 64px;
 }
 .logo {
-  font-family: var(--font-heading);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  color: var(--black);
-  text-decoration: none;
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
 }
-.logo span { color: var(--red); }
+.logo img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
 .nav-links {
   display: flex;
   align-items: center;
@@ -251,7 +251,7 @@ nav {
 }
 .hero-text h1 { margin-bottom: 24px; }
 .hero-text p {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);
   color: var(--gray-text);
   margin-bottom: 36px;
   max-width: 560px;
@@ -277,6 +277,7 @@ nav {
 }
 .hero-image--portrait { aspect-ratio: 3/4; }
 .hero-image--portrait img { object-position: center bottom; }
+.hero-image--square { aspect-ratio: 1/1; }
 
 /* ── PROOF BAR ── */
 .proof-bar {
@@ -732,6 +733,7 @@ footer {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-image { aspect-ratio: 16/9; }
   .hero-image--portrait { aspect-ratio: 3/4; }
+  .hero-image--square { aspect-ratio: 1/1; }
 
   .proof-item { padding: 0 32px 0 0; margin-right: 32px; }
 
