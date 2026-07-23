@@ -11,6 +11,14 @@
   --font-body: 'Nunito', sans-serif;
   --max: 1100px;
   --pad: clamp(24px, 5vw, 80px);
+
+  /* Typografická škála */
+  --text-xs:   11px;   /* labely, čísla */
+  --text-sm:   13px;   /* nav, tlačítka, zdroje */
+  --text-base: 17px;   /* body text */
+  --text-lg:   clamp(18px, 2vw, 22px);  /* perex, důležitý text */
+  --text-xl:   clamp(20px, 2.5vw, 28px);  /* H2 */
+  --text-2xl:  clamp(22px, 3vw, 36px);    /* H1 */
 }
 
 html { scroll-behavior: smooth; }
@@ -19,7 +27,7 @@ body {
   font-family: var(--font-body);
   color: var(--black);
   background: var(--white);
-  font-size: 17px;
+  font-size: var(--text-base);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -32,7 +40,7 @@ body {
 
 .label {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--red);
@@ -41,14 +49,14 @@ body {
 }
 
 h1, h2, h3 { font-family: var(--font-heading); font-weight: 500; line-height: 1.2; }
-h1 { font-size: clamp(22px, 3vw, 36px); }
-h2 { font-size: clamp(22px, 3vw, 36px); }
-h3 { font-size: clamp(16px, 2vw, 20px); }
+h1 { font-size: var(--text-2xl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
 
 .btn {
   display: inline-block;
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   padding: 14px 28px;
   border-radius: 2px;
@@ -83,7 +91,7 @@ nav {
 }
 .logo {
   font-family: var(--font-heading);
-  font-size: 20px;
+  font-size: var(--text-lg);
   font-weight: 600;
   color: var(--black);
   text-decoration: none;
@@ -98,7 +106,7 @@ nav {
 }
 .nav-links a {
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--black);
@@ -108,7 +116,7 @@ nav {
 .nav-links a:hover { opacity: 1; }
 .nav-cta {
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   padding: 10px 20px;
   background: var(--red);
@@ -125,7 +133,7 @@ nav {
 }
 .nav-dropdown-toggle {
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--black);
@@ -141,7 +149,7 @@ nav {
 }
 .nav-dropdown-toggle::after {
   content: '▾';
-  font-size: 10px;
+  font-size: var(--text-xs);
   transition: transform 0.2s;
 }
 .nav-dropdown-toggle:hover { opacity: 1; }
@@ -164,7 +172,7 @@ nav {
 .dropdown-menu a {
   display: block;
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--black);
@@ -213,7 +221,7 @@ nav {
 .nav-mobile.open { display: flex; }
 .nav-mobile a {
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--black);
@@ -243,7 +251,7 @@ nav {
 }
 .hero-text h1 { margin-bottom: 24px; }
 .hero-text p {
-  font-size: 18px;
+  font-size: var(--text-lg);
   color: var(--gray-text);
   margin-bottom: 36px;
   max-width: 560px;
@@ -256,7 +264,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-xs);
   color: var(--gray-text);
   letter-spacing: 0.08em;
   overflow: hidden;
@@ -268,6 +276,7 @@ nav {
   display: block;
 }
 .hero-image--portrait { aspect-ratio: 3/4; }
+.hero-image--portrait img { object-position: center bottom; }
 
 /* ── PROOF BAR ── */
 .proof-bar {
@@ -288,13 +297,13 @@ nav {
 .proof-item:last-child { border-right: none; margin-right: 0; padding-right: 0; }
 .proof-number {
   font-family: var(--font-heading);
-  font-size: 40px;
+  font-size: var(--text-xl);
   font-weight: 600;
   color: var(--red);
   line-height: 1;
   margin-bottom: 4px;
 }
-.proof-desc { font-size: 14px; color: var(--gray-text); }
+.proof-desc { font-size: var(--text-sm); color: var(--gray-text); }
 
 /* ── PRE KOHO ── */
 .pre-koho-grid {
@@ -324,14 +333,14 @@ nav {
 }
 .princip-num {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.1em;
   color: var(--red);
   margin-bottom: 20px;
   display: block;
 }
-.princip h3 { font-size: 16px; margin-bottom: 16px; color: var(--white); }
-.princip p { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.princip h3 { font-size: var(--text-base); margin-bottom: 16px; color: var(--white); }
+.princip p { font-size: var(--text-base); color: rgba(255,255,255,0.6); line-height: 1.6; }
 
 /* ── PROGRAMY ── */
 .programy-grid {
@@ -353,11 +362,11 @@ nav {
   color: var(--black);
 }
 .program-karta:hover { border-color: var(--red); }
-.program-karta h3 { font-size: 22px; margin-bottom: 16px; color: var(--red); }
+.program-karta h3 { font-size: var(--text-lg); margin-bottom: 16px; color: var(--red); }
 .program-karta p { color: var(--gray-text); margin-bottom: 32px; flex: 1; }
 .program-link {
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   color: var(--red);
   text-decoration: none;
@@ -392,7 +401,7 @@ nav {
   line-height: 1;
 }
 .referencia-text {
-  font-size: 15px;
+  font-size: var(--text-sm);
   line-height: 1.7;
   color: var(--black);
   margin-bottom: 28px;
@@ -400,7 +409,7 @@ nav {
 }
 .referencia-autor {
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
 }
 .referencia-autor strong { display: block; margin-bottom: 2px; }
@@ -408,7 +417,7 @@ nav {
 .referencie-link { margin-top: 40px; text-align: center; }
 .referencie-link a {
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   color: var(--red);
   text-decoration: none;
@@ -431,9 +440,19 @@ nav {
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-xs);
   color: var(--gray-text);
   letter-spacing: 0.08em;
+  overflow: hidden;
+}
+.o-mne-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 80%;
+  transform: scale(1.08);
+  transform-origin: center bottom;
+  display: block;
 }
 .o-mne-text p { color: var(--gray-text); margin-bottom: 20px; }
 .o-mne-text p:last-of-type { margin-bottom: 32px; }
@@ -443,7 +462,7 @@ nav {
 }
 .accordion-toggle {
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   color: var(--red);
   background: none;
@@ -462,15 +481,15 @@ nav {
 .accordion-content.open { display: block; }
 .accordion-content h4 {
   font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: var(--text-sm);
   font-weight: 500;
   margin-bottom: 12px;
   margin-top: 24px;
 }
-.accordion-content p { color: var(--gray-text); font-size: 15px; margin-bottom: 16px; }
+.accordion-content p { color: var(--gray-text); font-size: var(--text-sm); margin-bottom: 16px; }
 .accordion-content ul { list-style: none; padding: 0; }
 .accordion-content ul li {
-  font-size: 15px;
+  font-size: var(--text-sm);
   color: var(--gray-text);
   padding: 4px 0;
   padding-left: 16px;
@@ -493,7 +512,7 @@ nav {
 .cta-contact {
   margin-top: 32px;
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: var(--text-sm);
   letter-spacing: 0.06em;
   color: var(--gray-text);
 }
@@ -506,7 +525,7 @@ footer {
   padding: 32px var(--pad);
   text-align: center;
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.08em;
 }
 
@@ -514,12 +533,6 @@ footer {
 .positioning-text p {
   color: var(--gray-text);
   margin-bottom: 20px;
-}
-.positioning-text p:nth-child(2) {
-  font-family: var(--font-heading);
-  font-size: 15px;
-  color: var(--black);
-  font-weight: 500;
 }
 
 /* ── ČO FIRMA ZÍSKA (programy na mieru) ── */
@@ -534,29 +547,19 @@ footer {
 }
 .ziska-num {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.1em;
   color: var(--red);
   margin-bottom: 16px;
   display: block;
 }
 .ziska-item p {
-  font-size: 15px;
+  font-size: var(--text-base);
   color: rgba(255,255,255,0.7);
   line-height: 1.6;
 }
 
 /* ── CENA ── */
-.cena-block {
-  max-width: 720px;
-}
-.cena-text h2 { margin-bottom: 20px; }
-.cena-text p { color: var(--gray-text); }
-
-/* ── CENA ── */
-.cena-block {
-  max-width: 720px;
-}
 .cena-text h2 { margin-bottom: 20px; }
 .cena-text p { color: var(--gray-text); }
 .cena-block h2 { margin-bottom: 20px; }
@@ -569,7 +572,7 @@ footer {
 }
 .problem-stat {
   font-family: var(--font-heading);
-  font-size: 18px !important;
+  font-size: var(--text-lg) !important;
   color: var(--black) !important;
   border-left: 3px solid var(--red);
   padding-left: 20px;
@@ -578,7 +581,7 @@ footer {
 .problem-stat strong { color: var(--red); }
 .problem-source {
   font-family: var(--font-heading);
-  font-size: 11px !important;
+  font-size: var(--text-xs) !important;
   letter-spacing: 0.08em;
   color: var(--gray-text) !important;
   margin-bottom: 24px !important;
@@ -608,7 +611,7 @@ footer {
 .lws-prekoho-num {
   font-family: var(--font-heading);
   color: var(--red);
-  font-size: 18px;
+  font-size: var(--text-lg);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -626,14 +629,14 @@ footer {
 }
 .faza-num {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.1em;
   color: var(--red);
   margin-bottom: 20px;
   display: block;
 }
-.faza h3 { font-size: 16px; margin-bottom: 16px; color: var(--white); }
-.faza p { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.faza h3 { font-size: var(--text-base); margin-bottom: 16px; color: var(--white); }
+.faza p { font-size: var(--text-base); color: rgba(255,255,255,0.6); line-height: 1.6; }
 
 /* ── DVA STĹPCE (výstupy) ── */
 .lws-two-col {
@@ -652,7 +655,7 @@ footer {
   padding-left: 20px;
   border-bottom: 1px solid var(--gray-mid);
   position: relative;
-  font-size: 15px;
+  font-size: var(--text-base);
 }
 .lws-list li:last-child { border-bottom: none; }
 .lws-list li::before {
@@ -681,7 +684,7 @@ footer {
 }
 .tfr-quote {
   font-family: var(--font-heading);
-  font-size: 15px !important;
+  font-size: var(--text-lg) !important;
   color: var(--black) !important;
   border-left: 3px solid var(--red);
   padding-left: 20px;
@@ -703,20 +706,18 @@ footer {
 }
 .modul-num {
   font-family: var(--font-heading);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.1em;
   color: var(--red);
   margin-bottom: 16px;
   display: block;
 }
-.modul h3 { font-size: 15px; margin-bottom: 12px; color: var(--white); }
-.modul p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.modul h3 { font-size: var(--text-base); margin-bottom: 12px; color: var(--white); }
+.modul p { font-size: var(--text-base); color: rgba(255,255,255,0.6); line-height: 1.6; }
 .moduly-note {
   margin-top: 32px;
-  font-size: 14px;
   color: rgba(255,255,255,0.4);
-  font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: var(--text-xs);
   letter-spacing: 0.04em;
 }
 
@@ -759,7 +760,6 @@ footer {
   .section { padding: 56px var(--pad); }
 
   .hero { padding: 48px var(--pad) 40px; }
-  .hero-text p { font-size: 16px; }
   .btn { width: 100%; text-align: center; padding: 16px 24px; }
 
   .proof-bar { padding: 32px var(--pad); }
@@ -774,7 +774,7 @@ footer {
     gap: 16px;
   }
   .proof-item:last-child { border-bottom: none; }
-  .proof-number { font-size: 28px; min-width: 60px; margin-bottom: 0; }
+  .proof-number { min-width: 60px; margin-bottom: 0; }
 
   .pre-koho-block { padding: 32px 24px; }
 
