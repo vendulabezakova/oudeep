@@ -305,13 +305,13 @@ nav {
 .pre-koho-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  gap: 8px;
   margin-top: 56px;
-  border: 1px solid var(--gray-mid);
 }
 .pre-koho-block {
   padding: 48px;
   border: 1px solid var(--gray-mid);
+  border-radius: 4px;
 }
 .pre-koho-block h3 { margin-bottom: 16px; }
 .pre-koho-block p { color: var(--gray-text); }
@@ -342,7 +342,7 @@ nav {
 .programy-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 8px;
   margin-top: 56px;
 }
 .program-karta {
@@ -376,7 +376,7 @@ nav {
 .referencie-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 8px;
   margin-top: 56px;
 }
 .referencia {
@@ -603,13 +603,13 @@ footer {
 .lws-prekoho-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  gap: 8px;
   margin-top: 40px;
-  border: 1px solid var(--gray-mid);
 }
 .lws-prekoho-item {
   padding: 32px 40px;
   border: 1px solid var(--gray-mid);
+  border-radius: 4px;
   display: flex;
   gap: 16px;
   align-items: flex-start;
@@ -790,7 +790,7 @@ footer {
   .principy-grid { grid-template-columns: 1fr; }
   .princip { padding: 32px 24px; }
 
-  .programy-grid { grid-template-columns: 1fr; gap: 16px; }
+  .programy-grid { grid-template-columns: 1fr; gap: 8px; }
   .program-karta { padding: 32px 24px; min-height: auto; }
 
   .referencie-grid { grid-template-columns: 1fr; }
