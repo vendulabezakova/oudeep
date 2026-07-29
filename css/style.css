@@ -6,15 +6,15 @@
   --white: #ffffff;
   --gray-light: #F5F4F2;
   --gray-mid: #E8E6E2;
-  --gray-text: #6B6B6B;
+  --gray-text: #434343;
   --font-heading: 'Red Hat Mono', monospace;
   --font-body: 'Nunito', sans-serif;
   --max: 1100px;
   --pad: clamp(24px, 5vw, 80px);
 
   /* Typografická škála */
-  --text-xs:   11px;   /* labely, čísla */
-  --text-sm:   13px;   /* nav, tlačítka, zdroje */
+  --text-xs:   13px;   /* labely, čísla */
+  --text-sm:   15px;   /* nav, tlačítka, zdroje */
   --text-base: 17px;   /* body text */
   --text-lg:   clamp(18px, 2vw, 22px);  /* perex, důležitý text */
   --text-xl:   clamp(20px, 2.5vw, 28px);  /* H2 */
@@ -34,7 +34,7 @@ body {
 
 /* ── UTILITIES ── */
 .container { max-width: var(--max); margin: 0 auto; }
-.section { padding: 96px var(--pad); }
+.section { padding: 80px var(--pad); }
 .section--gray { background: var(--gray-light); }
 .section--dark { background: var(--black); color: var(--white); }
 
@@ -109,11 +109,10 @@ nav {
   font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--black);
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  color: var(--gray-text);
+  transition: color 0.2s;
 }
-.nav-links a:hover { opacity: 1; }
+.nav-links a:hover { color: var(--black); }
 .nav-cta {
   font-family: var(--font-heading);
   font-size: var(--text-sm);
@@ -136,9 +135,8 @@ nav {
   font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--black);
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  color: var(--gray-text);
+  transition: color 0.2s;
   background: none;
   border: none;
   cursor: pointer;
@@ -152,9 +150,9 @@ nav {
   font-size: var(--text-xs);
   transition: transform 0.2s;
 }
-.nav-dropdown-toggle:hover { opacity: 1; }
+.nav-dropdown-toggle:hover { color: var(--black); }
 .nav-dropdown-toggle.open::after { transform: rotate(180deg); }
-.nav-dropdown-toggle.open { opacity: 1; }
+.nav-dropdown-toggle.open { color: var(--black); }
 
 .dropdown-menu {
   display: none;
@@ -175,14 +173,13 @@ nav {
   font-size: var(--text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--black);
+  color: var(--gray-text);
   padding: 14px 20px;
   border-bottom: 1px solid var(--gray-mid);
-  opacity: 0.8;
-  transition: background 0.15s, opacity 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 .dropdown-menu a:last-child { border-bottom: none; }
-.dropdown-menu a:hover { background: var(--gray-light); opacity: 1; }
+.dropdown-menu a:hover { background: var(--gray-light); color: var(--black); }
 
 /* ── HAMBURGER ── */
 .nav-hamburger {
@@ -221,18 +218,16 @@ nav {
 .nav-mobile.open { display: flex; }
 .nav-mobile a {
   font-family: var(--font-heading);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--black);
-  padding: 14px 0;
+  color: var(--gray-text);
+  padding: 10px 0;
   border-bottom: 1px solid var(--gray-mid);
-  opacity: 0.8;
 }
 .nav-mobile a:last-child {
   border-bottom: none;
   color: var(--red);
-  opacity: 1;
   margin-top: 8px;
 }
 
@@ -425,6 +420,16 @@ nav {
   border-bottom: 1px solid var(--red);
   padding-bottom: 2px;
 }
+
+/* ── TDD WORKSHOP MEDIA ── */
+.tdd-workshop-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 32px;
+}
+.tdd-workshop-grid .hero-image { margin: 0; }
 
 /* ── O MNE ── */
 .o-mne-inner {
@@ -660,7 +665,7 @@ footer {
 }
 .lws-list li:last-child { border-bottom: none; }
 .lws-list li::before {
-  content: '—';
+  content: '»';
   position: absolute;
   left: 0;
   color: var(--red);
@@ -755,6 +760,8 @@ footer {
 
   .o-mne-inner { grid-template-columns: 1fr; gap: 40px; }
   .o-mne-foto { aspect-ratio: 16/9; }
+
+  .tdd-workshop-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 
 /* ── MOBIL (max 600px) ── */
