@@ -33,27 +33,13 @@ document.addEventListener('click', function(e) {
   if (!grid) return;
 
   const cards = Array.from(grid.querySelectorAll('.referencia'));
-  const filterBtns = Array.from(document.querySelectorAll('.ref-filter-btn'));
   const overlay = document.getElementById('ref-modal-overlay');
   const modalBody = document.getElementById('ref-modal-body');
   const closeBtn = document.getElementById('ref-modal-close');
   const prevBtn = document.getElementById('ref-modal-prev');
   const nextBtn = document.getElementById('ref-modal-next');
 
-  let activeFilter = 'all';
   let currentCard = null;
-
-  function applyFilter(filter) {
-    activeFilter = filter;
-    cards.forEach(card => {
-      card.hidden = !(filter === 'all' || card.dataset.category === filter);
-    });
-    filterBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === filter));
-  }
-
-  function visibleCards() {
-    return cards.filter(card => activeFilter === 'all' || card.dataset.category === activeFilter);
-  }
 
   function renderModal(card) {
     currentCard = card;
@@ -86,17 +72,12 @@ document.addEventListener('click', function(e) {
   }
 
   function navigate(dir) {
-    const list = visibleCards();
-    if (!list.length || !currentCard) return;
-    let idx = list.indexOf(currentCard);
+    if (!cards.length || !currentCard) return;
+    let idx = cards.indexOf(currentCard);
     if (idx === -1) idx = 0;
-    idx = (idx + dir + list.length) % list.length;
-    renderModal(list[idx]);
+    idx = (idx + dir + cards.length) % cards.length;
+    renderModal(cards[idx]);
   }
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
-  });
 
   cards.forEach(card => {
     card.addEventListener('click', () => openModal(card));

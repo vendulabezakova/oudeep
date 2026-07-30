@@ -300,6 +300,7 @@ nav {
   margin-bottom: 4px;
 }
 .proof-desc { font-size: var(--text-sm); color: var(--gray-text); }
+.proof-icon { height: var(--text-xl); width: auto; display: block; }
 
 /* ── PRE KOHO ── */
 .pre-koho-grid {
@@ -408,28 +409,6 @@ nav {
   border-bottom: 1px solid var(--red);
   padding-bottom: 2px;
 }
-
-/* ── REFERENCIE STRÁNKA: FILTER ── */
-.ref-filter {
-  display: flex;
-  gap: 24px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-.ref-filter-btn {
-  font-family: var(--font-heading);
-  font-size: var(--text-sm);
-  letter-spacing: 0.06em;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--gray-text);
-  padding: 8px 2px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
-}
-.ref-filter-btn:hover { color: var(--black); }
-.ref-filter-btn.active { color: var(--red); border-bottom-color: var(--red); }
 
 /* ── REFERENCIE STRÁNKA: KARTY ── */
 .referencie-grid--full { margin-top: 32px; }
@@ -553,7 +532,7 @@ nav {
 .ref-modal-text p { color: var(--black); margin-bottom: 16px; line-height: 1.7; }
 .ref-modal-text ul { list-style: none; padding: 0; margin-bottom: 16px; }
 .ref-modal-text ul li { position: relative; padding-left: 16px; color: var(--black); margin-bottom: 8px; }
-.ref-modal-text ul li::before { content: '—'; position: absolute; left: 0; color: var(--red); }
+.ref-modal-text ul li::before { content: '–'; position: absolute; left: 0; color: var(--red); }
 
 /* ── TDD WORKSHOP MEDIA ── */
 .tdd-workshop-grid {
@@ -636,7 +615,7 @@ nav {
   position: relative;
 }
 .accordion-content ul li::before {
-  content: '—';
+  content: '–';
   position: absolute;
   left: 0;
   color: var(--red);
@@ -931,8 +910,6 @@ footer {
 
   .referencie-grid { grid-template-columns: 1fr; }
   .referencia { padding: 32px 24px; }
-
-  .ref-filter { gap: 16px; }
 
   .ref-modal-overlay { padding: 0; align-items: flex-end; }
   .ref-modal { max-width: 100%; width: 100%; max-height: 90vh; border-radius: 12px 12px 0 0; padding: 32px 24px; }
