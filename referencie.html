@@ -49,43 +49,293 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-inner" style="grid-template-columns: 1fr;">
+  <div class="hero-inner">
     <div class="hero-text">
       <span class="label">Referencie</span>
-      <h1>Čo hovoria klienti.</h1>
+      <h1>Čo hovoria klienti</h1>
     </div>
+    <div class="hero-image" style="aspect-ratio: 1280/855;"><img src="media/oudeep-nikoleta-tirmazi-vitovska-referencie.webp" alt="Nikoleta Vitovská Tirmazi"></div>
   </div>
 </section>
 
-<!-- REFERENCIE — 3 vybrané z homepage -->
-<section class="section section--gray">
+<!-- REFERENCIE -->
+<section class="section section--gray" id="referencie">
   <div class="container">
-    <span class="label">Vybrané referencie</span>
-    <div class="referencie-grid">
-      <div class="referencia">
-        <p class="referencia-text">She doesn't just 'run the tests.' She opens up areas and conversations that go far beyond what we expected.</p>
+    <div class="ref-filter" role="tablist" aria-label="Filter referencií">
+      <button type="button" class="ref-filter-btn active" data-filter="all">Všetky</button>
+      <button type="button" class="ref-filter-btn" data-filter="firemne">Firemné</button>
+      <button type="button" class="ref-filter-btn" data-filter="individualne">Individuálne</button>
+    </div>
+
+    <div class="referencie-grid referencie-grid--full">
+
+      <article class="referencia referencia--full" data-category="firemne" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="referencia-autor">
           <strong>Peter Mlynarčík</strong>
           <span>CEO — B6 Furniture</span>
         </div>
-      </div>
-      <div class="referencia">
-        <p class="referencia-text">I found myself constantly wanting more sessions, during which I always learned something new about myself, my desires, or my goals.</p>
+        <span class="referencia-badge">Firemné</span>
+        <p class="referencia-text">She doesn't just "run the tests." She opens up areas and conversations that go far beyond what we expected.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>I'd really like to recommend Nikoleta Vitovská, who has been running the Gallup testing and development sessions for our company. From day one, she's been a perfect match for this role — combining great skill with a natural empathy that makes people feel understood and motivated.</p>
+          <p>What I appreciate most is that she doesn't just "run the tests." She opens up areas and conversations that go far beyond what we expected. You can really feel that she's not only guiding us through a process, but helping us grow as individuals and as a team.</p>
+          <p>It honestly feels like she's part of our team — not an external consultant, but someone who truly cares about our people and our journey. We're very happy to have her with us and can highly recommend her to anyone who wants to develop their team in a meaningful way.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="firemne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Alexander Dancso</strong>
+          <span>CCO — B6 Furniture</span>
+        </div>
+        <span class="referencia-badge">Firemné</span>
+        <p class="referencia-text">She brings so much warmth, empathy, and positive energy into every session that opening up and reflecting feels natural.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Working with Nikoleta has been a truly positive and meaningful experience for me. 😊</p>
+          <p>What I appreciate most is her rare ability to make people feel safe, relaxed, and genuinely understood. She brings so much warmth, empathy, and positive energy into every session that opening up and reflecting feels natural.</p>
+          <p>She doesn't just explain Gallup strengths — she helps you really understand what they mean in real life, both for you as a person and for the team. I've seen how her sessions create not only insight, but also real connection between people.</p>
+          <p>Nikoleta brings heart into this work, and that makes all the difference. I can sincerely recommend her to anyone who wants to grow, better understand themselves, and build stronger teams.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="referencia-autor">
           <strong>Jan Roh</strong>
           <span>CIF Executive Director — Cyprus</span>
         </div>
-      </div>
-      <div class="referencia">
-        <p class="referencia-text">Nika pomohla, aby sme strategicky pracovali s talentami, ktoré máme vo firme a vyskladali plne funkčné tímy, ktoré sa navzájom dopĺňajú.</p>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">I found myself constantly wanting more sessions, during which I always learned something new about myself, my desires, or my goals.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>I am an experienced leader of several senior teams and team leaders, having served as a director of multiple companies since 2016. Because of this, I confidently assumed that with my level of experience, I would be the one coaching Niki.</p>
+          <p>But then, Niki tried coaching me. I must admit, I didn't expect the talent I saw in her — it absolutely captivated me. I found myself constantly wanting more sessions, during which I always learned something new about myself, my desires, or my goals. To this day, I carry with me many lessons that I reached on my own thanks to her questions and guidance.</p>
+          <p>Coaching with Niki is so natural that you won't even realise you are going through a life-changing transformation. She allows you to relax and share things you wouldn't share with anyone else. In a coaching session set up like that, miracles can happen. Her warm, sincere personality leaves you with a pleasant feeling that you are not alone in whatever you are facing. And thanks to her inquisitive questions — the kind that would never occur to you — you'll realize almost immediately that there is a solution to your problems that is not only possible but actually within arm's reach.</p>
+          <p>Niki also gives you the determination to take action. I believe it is her unyielding appetite for embarking on new adventures with the people around her that manages to transfer such sentiment and courage.</p>
+          <p>Without a single doubt, I can recommend Niki. I have tried quite a few coaches and my own approaches to working with people, yet I constantly find my thoughts returning to how she works with people and what I can learn from it.</p>
+          <p>Give it a try with Niki, and I am certain you will turn your life story into a different, or perhaps entirely new, one. The kind of story you will fall in love with and actually want to start living.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Adam Hrazdil</strong>
+          <span>Business Development Manager</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Nebyl to tehdy jen Gallup, ale hlavně Niki, jejíž transformace teoretických výstupů do praxe poskládala mé pravé, skutočné (a nové) já.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Setkání s Niki a její prací vyžaduje podělit se o moji osobní zkušenost.</p>
+          <p>Setkali jsme se před lety ve stejné společnosti, kde se věnoval čas a energie do zaměstnanců. Jako člověk, který se v průběhu svého života někdy letmo, někdy víc do hloubky setkával se světem osobního růstu, motivace, sebepoznání, jsem měl příležitost týmové a osobní práce s Niki a nástrojem Gallup. Empatický, citlivý, nadšený přístup Niki mi pomohl poznat sebe samotného jako nikdy před tím. Téměř ze dne na den se mi vnímání života obrátilo. Výraznou měrou mi pomohlo přehodnotit životní priority, pochopit a přijmout sebe samotného a vědomě jsem začal žít život v souladu s mým vnitřním já. Nebyl to tehdy jen Gallup, ale hlavně Niki, jejíž transformace teoretických výstupů do praxe poskládala mé pravé, skutečné (a nové) já. Moje následná "sebespokojenost" se neprojevila jen v osobním životě, ale i v pracovním. A to platí i pár let od našeho setkání.</p>
+          <p>Proto práci Niki vřele doporučuji. Niki, ještě jednou díky.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="firemne" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="referencia-autor">
           <strong>Monika Oravcová</strong>
           <span>HR Partner — Aston ITM</span>
         </div>
-      </div>
+        <span class="referencia-badge">Firemné</span>
+        <p class="referencia-text">Nika pomohla, aby sme strategicky pracovali s talentami, ktoré máme vo firme a vyskladali plne funkčné tímy, ktoré sa navzájom dopĺňajú.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Vo firme strategicky pracujeme s Gallup výsledkami. Mojou zodpovednosťou je stratégia HR, vzdelávania a coaching kolegov. Nika spolu so mnou absolvovala výcvik talentwork, kde sme sa naučili pracovať s Gallup metodikou ako coachovia. Je veľmi nadanou a podporujúcou coachkou, takže som ju neváhala osloviť, aby nám vo firme pomohla s Gallup konzultáciami.</p>
+          <p>Pracujeme s Gallupom na individuálnej úrovni rozvoja aj na úrovni tímov. Nika u nás viedla individuálne aj tímové Gallup konzultácie a workshopy, a tak pomohla, aby sme strategicky pracovali s talentami, ktoré máme vo firme, a aby sme vyskladali plne funkčné agilné tímy, ktoré sa vzájomne dopĺňajú.</p>
+          <p>Tiež mi pomohla konzultáciami v oblasti vzdelávania a rozvoja, v ktorej má bohaté skúsenosti. Jej podporný a empatický prístup ako coacha je veľmi vzácnym talentom.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Lukáš Uhrík</strong>
+          <span>Scrum Master — Inra Avitech</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">I have had the privilege of working with Niki in coaching based on my Gallup Assessment results and can highly recommend her.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>I have had the privilege of working with Niki in coaching based on my Gallup Assessment results and can highly recommend her to anyone looking for professional and effective coaching.</p>
+          <p>Niki has an exceptional ability to analyze results and offer specific and practical advice on how to use them to improve personal and professional performance. Her approach is very personal and based on a deep understanding of her client's individual needs. Thanks to her coaching, I have a better understanding of my talents and how to use them effectively in my daily life and at work.</p>
+          <p>Niki is not only a great professional but also an empathetic and supportive person. I felt motivated and supported during our work together.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Petr Chutný</strong>
+          <span>UI / Web / Graphic Designer</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">I can highly recommend Niki, most importantly because she pays a good attention, and trusts deeply in what she's doing 👍</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Niki had guided me through the vast knowledge of Gallup, and helped me to understand my top qualities, how they show up in my daily life, and what to do with them. These meetings were quite pleasant, sometimes also unpleasant – and such is personal growth 😄 I can highly recommend Niki, most importantly because she pays a good attention, and trusts deeply in what she's doing and is very enthusiastic and determined about it 👍</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Vendula Bezáková</strong>
+          <span>Webmaster — Purple Trading</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Díky sezení jsem si uvědomila, že nikdy není pozdě cokoliv nového zkusit — a dokopalo mě to vystoupit z komfortní zóny.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>V prvé řadě musím napsat, jak krásně se mi s tebou povídalo - neměla jsem pocit žádného souzení nebo hodnocení a pomohlo mi to se otevřít. V mých předešlých pracích jsme dělali různé podobné testy, např. 16 personalities, ale nikdy se s tím aktivně nepracovalo a lidi nevěděli, jak to prakticky využít jak pro sebe, tak pro jednání se svými kolegy.</p>
+          <p>Díky sezení jsem si uvědomila:</p>
+          <ul>
+            <li>že je v pořádku se i vícekrát doptávat, že to neznamená, že pomaleji chápu, ale že potřebuji co nejvíce informací, abych se mohla rozhodnout nebo navrhnout další kroky (např. když markeťáci přijdou s novou kampaní a navrhujeme vstupní stránku na webu, ptám se na co nejvíce podrobností, aby nebylo potřeba ji předělávat);</li>
+            <li>že mi jdou a více mě baví kratší projekty, kdy řeším jeden problém a navrhuji nějaké řešení (např. nová featura na webu, která má nějak fungovat), než rutinní úkoly;</li>
+            <li>jak jsem vděčná za lidi ve svém týmu a že pro mě jsou důležité hlubší vztahy s nimi;</li>
+            <li>dokopalo mě to vystoupit z komfortní zóny a přihlásila jsem se jako kouč do organizace Czechitas a chci si zkusit pomáhat jiným holkám učit se kódovat;</li>
+            <li>pomohlo mi to přemýšlet jinak nad tím, že nikdy není pozdě cokoliv nového zkusit;</li>
+            <li>pomohlo mi to začít si zvědomovat, že nezáleží na tom, co si kdo myslí o tom, co a jak dělám.</li>
+          </ul>
+          <p><strong>Update po cca 2 rokoch:</strong></p>
+          <p>Několikrát jsem s Czechitas koučovala a zúčastnila se akcí jako člen jejich širšího týmu. Dělala jsem s nimi i nějaké další kurzy jako účastnice. Hodně mi to pomohlo ve vyjadřování a sebevědomí a měla jsem na to i pozitivní feedback v práci, když jsem předávala před svou dovolenou nějaké své úkoly. Dokončila jsem teď nedávno dlouhodobý programovací kurz. No a zrovna tento týden jsem pro známého dělala nějakou práci na reálném webu pro jeho klientku, to mě strašně namotivovalo.</p>
+          <p>Konečně :) jsem se rozešla s teď už ex-přítelem, což bylo náročné, protože se mě i po 7 měsících stále snaží kontaktovat, bydlím sama a cestuji sama a je to úžasné. Jako další výzvu mám ještě letos projet si sólo Kosovo. No a od toho rozchodu víc vyjadřuji ostatním, že jsem s nimi ráda, nebo že se mi naopak něco nelíbí a jsem těmto debatám víc otevřená.</p>
+          <p>Takže i když to je vlastně docela dlouho, co jsme spolu seděly, a bylo to jen 2x, tak to na mě mělo docela velký dopad a jsem za to ráda. :)</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Aleš Hála</strong>
+          <span>Business Analyst — Generali Investments CEE</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Oceňuji upřímnost a snahu pomoci druhému, která šla od srdce.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Oceňuji individuální přístup, oceňuji formu konverzace 1 vs 1, oceňuji, že to nebylo formou prezentace nebo webináře, kdybych jenom seděl a nudou bych usínal.</p>
+          <p>Oceňuji upřímnost a snahu pomoci druhému, která šla od srdce. Oceňuji diskrétnost a snahu navázat na druhé setkání. I když naše konverzace byla spíše o mojí osobě, než o práci, velice mi to pomohlo si sestavit priority. Oceňuji celkově tvoje profesionální vystupování a úrovni doktorky psychologie.</p>
+          <p>Naše společné střetnutí bych ohodnotil 5/5*. Byl jsem se svým skeptickým přístupem opravdu na pochybách, ale po 5-ti minutách jsem pochopil, že je to velice užitečná věc.</p>
+          <p>Takže ti ještě jednou zpětně děkuji a těším se na další setkání.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Aleš Chromec</strong>
+          <span>Staff Product Designer — Deepnote</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Mě to pomohlo se sebeuvědoměním a dokonce i s akceptováním sama sebe.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Mě to pomohlo se sebeuvědoměním a dokonce i s akceptováním sama sebe. Občas si na to teď vzpomenu a přemýšlím "Jak tohle vyřešit strategicky / disciplínou?". Byl jsem hodně překvapený kvalitou.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Jakub Hönig</strong>
+          <span>Frontend TypeScript Developer — InQool</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Pomohlo mi to pojmenovat a konkretizovat to, co jsem tak nejak tušil dřív, ale nemělo to konkrétní podobu.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Pro mě osobně ty sessions byly supr v tom, že mi to pomohlo pojmenovat a konkretizovat to, co jsem tak nejak tušil dřív, ale nemělo to konkrétní podobu. Na co jsem se snažil zaměřit, byly doporučení na co si dát u jednotlivých talentů pozor — a hlavně uvědomit si, že ostatní lidi to mají jinak a nečekat od nich to stejné jako od sebe. Je super, že to má přesah i do osobního života, že nejde jen o pracovní záležitosti, ale o člověka celkově jako osobnost.</p>
+          <p>Druhá věc, co mi utkvěla, je, že talenty, které máme na nižší úrovni, je super v rámci týmu (nebo dvou lidí) doplnit někým, kdo je má na vyšších úrovních. To jsou pro mě dva hlavní body — na co si dát u talentů pozor, a jak vyvážit "netalenty". Jinak, mám radost, že Gallup oceňují i ostatní z týmu a berou to jako přínos — dost se těším na týmovou session.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Viktória Fekete</strong>
+          <span>Frontend Developer — Aston ITM</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Tieto konzultácie s ňou mi skutočne zmenili pohľad na seba.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Mala som možnosť spolupracovať s Nikoletou na analýze mojich výsledkov z Gallup testu počas posledných mesiacov, a môžem povedať, že práve tieto konzultácie s ňou mi skutočne zmenili pohľad na seba. Napísať test a vidieť svojich 34 zoradených talentov je síce zaujímavé, ale to, čo mi reálne prinieslo hodnotu, bolo práve jej vedenie a prístup.</p>
+          <p>Vďaka jej empatii a otvorenosti sa s ňou komunikuje veľmi ľahko, aj pre tých, ktorí sú introvertní alebo uzavretejší. Dokáže klásť presne cielené otázky, ktoré odhaľujú podstatné súvislosti a vedú k hlbšiemu porozumeniu. Jej prístup k práci je nielen profesionálny, ale aj veľmi osobný a podporujúci. Práve vďaka jej kritickým otázkam som lepšie pochopila svoje reakcie a získala cenné náhľady na seba.</p>
+          <p>Niki bola obrovská pomoc v tom, aby som pochopila, ako fungujem ako človek, a aby som zlepšila tie oblasti, s ktorými som zápasila. Jej konzultácie mi dali nielen nástroje na zmenu, ale aj sebadôveru, že dokážem veci zlepšiť.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="firemne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Michal Fulier</strong>
+          <span>Operations Manager — Purple Solutions</span>
+        </div>
+        <span class="referencia-badge">Firemné</span>
+        <p class="referencia-text">Nikoleta, as the leader of L&amp;D, proved that learning can be both engaging and effortless.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Learning &amp; Development was an experimental project at our company, designed to hone the skills and abilities of our employees. My team was among the first to participate in this initiative, and we were pleasantly surprised by the many interesting insights and experiences it continues to provide to this day.</p>
+          <p>Calling it a success would be an understatement. The L&amp;D team managed to create an entire development plan from the ground up in just a few months, implementing advanced methods and tools such as Gallup Strengthsfinder, skill gap analysis, SHL Competency Profiler cards, and many more.</p>
+          <p>For me, the Gallup CliftonStrengths Assessment was probably the most interesting aspect. Each member of my team completed the Gallup test to discover their individual strengths, and we didn't stop there. We learned a great deal about our personalities, how our strengths manifest in our daily lives, and how they influence our colleagues and performance. Simply put, we realized what we're good at and how to grow.</p>
+          <p>The entire team participated in multiple sessions where we learned how to prioritize, communicate assertively, and promote responsibility and accountability. The feedback from everyone who participated was overwhelmingly positive.</p>
+          <p>The L&amp;D team focused on both our soft and hard skills, organizing numerous meetings with experts across the company. The result was a significant increase in our knowledge of the company and industry context. L&amp;D taught us more about our colleagues and their roles than any previous huddle or meeting.</p>
+          <p>It has been two years since the L&amp;D project concluded, and my only regret is that we couldn't continue due to shifting company priorities. Some of us were initially skeptical about the viability of such a project. However, Nikoleta, as the leader of L&amp;D, proved that learning can be both engaging and effortless.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Darina Ostrolúcka</strong>
+          <span>Freelance B2B Marketer</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Jej prístup je veľmi podporujúci a empatický.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Gallup testovanie a následná konzultácia s Niki o mojich silných a menej dominantných talentoch mi veľmi pomohla pochopiť seba a moje motivácie. S Niki sme si na sedeniach prešli moje dominantné talenty, ale najviac mi pomohla konzultácia, kde sme riešili posledných päť talentov. Pochopila som, že sa dajú skvelo kompenzovať tými silnými, keď človek vie ako.</p>
+          <p>To, ako ma Niki k tomuto poznaniu previedla, je naozaj eye-opening. Vidno, že už má veľa skúseností a vie správne klásť otázky, ktoré človeka za 1 hodinu posunú naozaj ďaleko. Jej prístup je veľmi podporujúci a empatický.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="individualne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Radovan Fekeč</strong>
+          <span>Tech-Team Lead — Purple Technology</span>
+        </div>
+        <span class="referencia-badge">Individuálne</span>
+        <p class="referencia-text">Aj keď o svojich talentoch viem, tak je super, že sa na tej session môžem zamyslieť, ako to na mňa vplýva aj v osobnom živote.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>Neviem, ako to máš u iných ľudí, ale u mňa to má veľmi silný terapeutický účinok. Aj keď o svojich talentoch viem, tak je super, že sa na tej session môžem zamyslieť, ako to na mňa vplýva napr. aj v osobnom živote. Alebo si aj uvedomiť, ako je to celé poprepájané a ako sa jednotlivé talenty ovplyvňujú. A aj vidieť, čo má človek na poslednom mieste, je „eye opening". Veľmi sa mi tiež páčilo, ako si to celé viedla a že to malo celé spád a že som sa dozvedel aj nové veci.</p>
+        </div>
+      </article>
+
+      <article class="referencia referencia--full" data-category="firemne" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="referencia-autor">
+          <strong>Anna Vajová</strong>
+          <span>Head of Corporate — Purple Technology</span>
+        </div>
+        <span class="referencia-badge">Firemné</span>
+        <p class="referencia-text">Niky je veľmi dobrý poslucháč — dá človeku čas, aby sa vyjadril, a v prípade potreby ponúkne aj inú perspektívu.</p>
+        <span class="referencia-more">Zobraziť celé →</span>
+        <div class="referencia-full" hidden>
+          <p>V čase, keď sme spolu s Niky začali spolupracovať v oblasti rozvoja a práce so silnými stránkami, som začínala na pozícii Team Leadra. Náš tím naskočil na projekt vzdelávania a rozvoja, čo pre mňa bolo nové a pochopiteľne aj dosť stresujúce, keďže sme sa rozvíjali nielen ako jednotlivci, ale aj spolu ako tím.</p>
+          <p>Niky zohrávala počas celého procesu projektu veľmi dôležitú úlohu, no v úvode som jej pokojnú a profesionálnu prítomnosť vnímala najintenzívnejšie. Všetko vedela vysvetliť a objasniť veľmi zrozumiteľne, ochotne a ľudsky, a bola schopná individualizovať svoj prístup a komunikáciu tak, že vedela pracovať so širokou plejádou osobností.</p>
+          <p>Hneď na prvých sedeniach, ktoré sme na začiatku projektu spolu absolvovali, bolo zjavné, že má o témy vzdelávania, pomoci druhým v práci s ich silnými stránkami a coaching veľký záujem. Sedenia vedela dobre viesť, dať dôraz na veci, ktoré boli podstatné, ale aj presmerovať pozornosť účastníkov sedenia „back on track", keď sa nechali strhnúť niekam, kde to už nikam neviedlo.</p>
+          <p>Niky je veľmi dobrý poslucháč. Dá človeku čas, aby sa vyjadril, nechá jeho myšlienky doznieť, a v prípade, že je človek otvorený vypočuť si aj inú perspektívu, je schopná podať ju veľmi úderne, vecne a tak, aby príjemcu nezahltila.</p>
+          <p>Počas trvania projektu som sa na ňu mohla obrátiť s otázkami, alebo len tak, keď som sa potrebovala vyrozprávať a usporiadať si myšlienky. Bola jednou z mojich oporných bodov, a v prípade, že niekde nastali nejaké problémy alebo nejasnosti, bola pripravená konať a hľadať riešenie.</p>
+          <p>V závere projektu spracovala so svojím tímom dáta zbierané naprieč priebehom projektu do finálnej podoby, ktorá bola štruktúrovane a zrozumiteľne odprezentovaná účastníkom. Aj vďaka účasti na vzdelávacom programe, na ktorom Niky spolu so svojím tímom spolupracovali, som otvorila témy, s ktorými by som sa sama len tak ľahko nekonfrontovala, a cítila som sa v bezpečí, keď som tieto témy s Niky diskutovala a riešila.</p>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
+
+<!-- REFERENCIE MODAL -->
+<div class="ref-modal-overlay" id="ref-modal-overlay" hidden>
+  <button type="button" class="ref-modal-arrow ref-modal-arrow--left" id="ref-modal-prev" aria-label="Predchádzajúca referencia">‹</button>
+  <div class="ref-modal" role="dialog" aria-modal="true" aria-label="Referencia">
+    <button type="button" class="ref-modal-close" id="ref-modal-close" aria-label="Zavrieť">✕</button>
+    <div class="ref-modal-body" id="ref-modal-body"></div>
+  </div>
+  <button type="button" class="ref-modal-arrow ref-modal-arrow--right" id="ref-modal-next" aria-label="Nasledujúca referencia">›</button>
+</div>
 
 <!-- CTA -->
 <section class="section">
