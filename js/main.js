@@ -46,14 +46,12 @@ document.addEventListener('click', function(e) {
     const photo = card.querySelector('.referencia-photo');
     const name = card.querySelector('.referencia-autor strong').textContent;
     const role = card.querySelector('.referencia-autor span').textContent;
-    const badge = card.querySelector('.referencia-badge').textContent;
     const fullHtml = card.querySelector('.referencia-full').innerHTML;
 
     modalBody.innerHTML =
       (photo ? `<img class="ref-modal-photo" src="${photo.getAttribute('src')}" alt="${photo.getAttribute('alt')}">` : '') +
       `<strong class="ref-modal-name">${name}</strong>` +
       `<span class="ref-modal-role">${role}</span>` +
-      `<span class="ref-modal-badge">${badge}</span>` +
       `<div class="ref-modal-text">${fullHtml}</div>`;
 
     modalBody.scrollTop = 0;

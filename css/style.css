@@ -430,15 +430,6 @@ nav {
   margin-bottom: 16px;
 }
 .referencia--full .referencia-autor { margin-bottom: 0; }
-.referencia-badge {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin: 10px 0 4px;
-}
 .referencia--full .referencia-text { margin-bottom: 24px; }
 .referencia-more {
   font-family: var(--font-heading);
@@ -518,16 +509,7 @@ nav {
   font-size: var(--text-lg);
   display: block;
 }
-.ref-modal-role { color: var(--gray-text); font-size: var(--text-sm); display: block; margin-top: 4px; }
-.ref-modal-badge {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin: 12px 0 24px;
-}
+.ref-modal-role { color: var(--gray-text); font-size: var(--text-sm); display: block; margin: 4px 0 24px; }
 .ref-modal-text { position: relative; }
 .ref-modal-text p { color: var(--black); margin-bottom: 16px; line-height: 1.7; }
 .ref-modal-text ul { list-style: none; padding: 0; margin-bottom: 16px; }
